@@ -40,11 +40,11 @@ body {
 /* Hide scrollbar for IE and Edge */
 .main {
   -ms-overflow-style: none;
-} 
+}
 
 .header {
 	top: 0;
-	z-index: 3;
+	z-index: 2;
 	width: 100%;
 	background-color: rgba(225, 221, 79, 1);
 	font-family: "Arial", Helvetica, sans-serif;
@@ -141,18 +141,25 @@ body {
 #about {
 	position: fixed;
 	z-index: 2;
-	width: 0;
 	height: 100%;
-	background-color: rgba(225,221,79, 0.9);
-	overflow: hidden;
-	
+	background-color: rgba(225,221,79, 0.98);
+	overflow-x: hidden;
+	overflow-y: hidden;
+
 }
 
 .overlay-content {
 	height: 100%;
-	margin: 90px 0 0 16px;
+	margin: 0;
+	padding: 0;
 	font-family: Helvetica;
 	color: rgba(77,77,27,0.8);
+	position: inherit;
+	display: flex;
+	flex-direction: column;
+	top: 3%;
+	z-index: 3;
+
 }
 
 .how {
@@ -164,34 +171,36 @@ body {
 }
 
 .designer {
-	font-size: 31px;
+	font-size: 8vw;
 	color: rgba(77,77,27,1);
+	margin: 0 0 0 16px;
 }
 
 .like {
-	margin: 8px 0 0 0;
-	font-size: 19px;
+	margin: 8px 0 0 16px;
+	font-size: 4.2vw;
 	line-height: 1.5;
 }
 
 .experience {
-	margin: 41px 0 15px 0;
-	font-size: 19px;
+	margin: 30px 0 5px 16px;
+	font-size: 4.5vw;
 	color: rgba(77,77,27,1);
 }
 
 .tab {
-	margin: 0 8px 0 -8px;
+	margin: 8px 8px 0 8px;
 	border-top-style: solid;
 	border-top-width: thin;
 	border-top-color: #e7e499;
 	box-shadow: 1px 0 0 0 #4d4d1b, -1px 0 0 0 rgba(40, 7, 9, 0.3);
 	display: flex;
 	flex-direction: column;
+	font-size: 4vw;
 }
 
 .tab p {
-	font-size: 16px;
+	font-size: 4vw;
 	list-style: none;
 	margin: 8px 0 0 8px;
 }
@@ -203,7 +212,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	margin: 8px 8px 10px 8px;
-	
+
 }
 
 .jobtype {
@@ -220,15 +229,17 @@ body {
 }
 
 .details {
-	margin: 35px 16px 15px 0;
-	font-size: 19px;
+	margin: 30px 16px 13px 16px;
+	font-size: 5vw;
 	color: rgba(77,77,27,1);
+	display: flex;
 }
 
 .social-link {
 	display: flex;
 	justify-content: space-between;
-	margin: 0 16px 0 0;
+	margin: 0 16px 0 16px;
+	flex-direction: row;
 }
 
 .social-link a {
@@ -236,18 +247,19 @@ body {
 }
 
 .menu-why {
-	position: absolute;
-	bottom: 3%;
-	font-size: 13px;
+	position: fixed;
+	bottom: 2%;
+	font-size: 3.3vw;
+	padding: 0 16px 0 16px;
 }
 
 .interruption {
-	position: absolute;
-	bottom: 9%;
-	left: 50%;
-    transform: translateX(-50%);
+	position: fixed;
+	bottom: 10%;
+	margin: 0 6px;
 	width: 96%;
 	height: 5px;
+
 	display: flex;
 	border-bottom-style: solid;
 	border-bottom-width: thin;
@@ -265,7 +277,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 87px 8px 0;
-	
+
 }
 
 .column {
@@ -287,18 +299,18 @@ figure {
 	width: 100%;
 	margin-top: 8px;
 	vertical-align: middle;
-	
+
 }
 
 video {
 	margin-top: 8px;
 	width: 100%;
 	height: auto;
-	
+
 }
 
 .titolo {
-	
+
 	border-bottom-style: solid;
 	border-bottom-width: thin;
 	border-bottom-color: #4d4d1b;
@@ -329,4 +341,10 @@ video {
 }
 
 @media screen and (min-width: 375px) {
+}
+
+@media screen and (min-width: 610px) {
+}
+
+@media screen and (min-width: 976px) {
 }
