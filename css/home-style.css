@@ -168,11 +168,9 @@ body {
 .designer {
 	font-size: 8vw;
 	color: rgba(77,77,27,1);
-	margin: 0 0 0 16px;
 }
 
 .like {
-	margin: 8px 0 0 16px;
 	font-size: 4.2vw;
 	line-height: 1.5;
 }
