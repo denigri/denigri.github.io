@@ -119,20 +119,11 @@ body {
 	padding: 7px;
 }
 
-.buttonD {
-	background-color: #66ccff;
-	text-decoration: none;
-}
-
-.buttonD a {
-	text-decoration: none;
-	color: black;
-}
-
 .buttonDenigri {
 	background-color: white;
 	width: 82px;
 	float: right;
+	text-decoration: none;
 }
 
 #colorbutton {
