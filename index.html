@@ -109,7 +109,7 @@ viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve
 				<button id="colorbutton" class="button buttonDenigri" onclick="openNav(); changeColor();"><span class="Denigri">Bio</span></button>
 			</div>
 		</nav>
-				<div id="about" class="overlay">
+				<div id="about" class="overlay" style="display:none;width:0;">
 					<div class="overlay-content">
 						<div class="designer">I'm a designer.</div>
 						<p class="like">I like abstractions, I write to understand. Sometimes I code. My main interests are into technology, critical thinking, motion, photography, Arts.</p>
@@ -255,11 +255,11 @@ viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve
 		x.style.width = "100%";
   	x.style.display = "flex";
 
-	  colorbutton.style.backgroundColor = 'white';
+	  colorbutton.style.backgroundColor = '#e1dd4f';
   } else {
     x.style.display = "none";
 	  x.style.width = "0%";
-	  colorbutton.style.backgroundColor = '#e1dd4f';
+	  colorbutton.style.backgroundColor = 'white';
 
   }
 }
