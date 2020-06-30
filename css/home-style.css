@@ -344,9 +344,9 @@ video {
 }
 
 @media screen and (min-width: 976px) {
-.column columnrationale dekstop {
+.dekstop {
 	width: 100%;
-	display: block;
+	display: flex;
 	}
 	.mobile {
 	display: none;
