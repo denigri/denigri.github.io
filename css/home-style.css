@@ -336,10 +336,18 @@ video {
 }
 
 @media screen and (min-width: 375px) {
+	#rationale-dekstop-menu {
+	display: none;
 }
 
 @media screen and (min-width: 610px) {
 }
 
 @media screen and (min-width: 976px) {
+	#rationale-dekstop-menu {
+	display: block;
+	}
+	.mobile {
+	display: none;
+	}
 }
