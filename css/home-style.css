@@ -336,7 +336,7 @@ video {
 }
 
 @media screen and (min-width: 375px) {
-.column columnrationale dekstop {
+.dekstop {
 	display: none;
 }
 
