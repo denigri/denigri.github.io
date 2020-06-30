@@ -345,6 +345,7 @@ video {
 
 @media screen and (min-width: 976px) {
 	#rationale-dekstop-menu {
+	width: 100%;
 	display: block;
 	}
 	.mobile {
