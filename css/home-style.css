@@ -168,13 +168,13 @@ body {
 .designer {
 	font-size: 8vw;
 	color: rgba(77,77,27,1);
-	margin: 0 8px;
+	margin: 0 16px;
 }
 
 .like {
 	font-size: 4.2vw;
 	line-height: 1.5;
-	margin: 0 8px;
+	margin: 0 16px;
 }
 
 .experience {
