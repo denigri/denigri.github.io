@@ -336,7 +336,7 @@ video {
 }
 
 @media screen and (min-width: 375px) {
-	#rationale-dekstop-menu {
+.column columnrationale dekstop {
 	display: none;
 }
 
@@ -344,7 +344,7 @@ video {
 }
 
 @media screen and (min-width: 976px) {
-	#rationale-dekstop-menu {
+.column columnrationale dekstop {
 	width: 100%;
 	display: block;
 	}
