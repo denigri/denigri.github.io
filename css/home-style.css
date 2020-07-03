@@ -188,7 +188,6 @@ body {
 	border-top-width: thin;
 	border-top-color: #e7e499;
 	box-shadow: 1px 0 0 0 #4d4d1b, -1px 0 0 0 rgba(40, 7, 9, 0.3);
-	flex: 1;
 	font-size: 4vw;
 }
 
