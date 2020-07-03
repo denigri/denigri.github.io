@@ -151,9 +151,8 @@ body {
 	position: inherit;
 	display: flex;
 	flex-direction: column;
-	top: 3%;
+	top: 2%;
 	z-index: 3;
-	bottom: 20%;
 }
 
 .how {
@@ -165,19 +164,19 @@ body {
 }
 
 .designer {
-	font-size: 8vw;
+	font-size: 10vw;
 	color: rgba(77,77,27,1);
 	margin: 0 16px;
 }
 
 .like {
-	font-size: 4.2vw;
-	line-height: 1.5;
-	margin: 0 16px;
+	font-size: 5vw;
+	line-height: 1.6;
+	margin: 15px 16px;
 }
 
 .experience {
-	margin: 30px 0 5px 16px;
+	margin: 10px 0 5px 16px;
 	font-size: 4.5vw;
 	color: rgba(77,77,27,1);
 }
