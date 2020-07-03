@@ -153,7 +153,7 @@ body {
 	flex-direction: column;
 	top: 3%;
 	z-index: 3;
-
+	bottom: 20%;
 }
 
 .how {
@@ -225,11 +225,12 @@ body {
 	margin: 30px 16px 13px 16px;
 	font-size: 5vw;
 	color: rgba(77,77,27,1);
-	display: flex;
+	flex: 1;
 }
 
 .social-link {
 	display: flex;
+	flex: 1;
 	justify-content: space-between;
 	margin: 0 16px 0 16px;
 	flex-direction: row;
