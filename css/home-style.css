@@ -221,25 +221,6 @@ body {
 	text-align: right;
 }
 
-.details {
-	margin: 30px 16px 13px 16px;
-	font-size: 5vw;
-	color: rgba(77,77,27,1);
-	flex: 1;
-}
-
-.social-link {
-	display: flex;
-	flex: 1;
-	justify-content: space-between;
-	margin: 0 16px 0 16px;
-	flex-direction: row;
-}
-
-.social-link a {
-	color: rgba(77,77,27,0.8);
-}
-
 .menu-why {
 	position: fixed;
 	bottom: 2%;
