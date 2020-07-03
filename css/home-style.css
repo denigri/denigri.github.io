@@ -338,7 +338,23 @@ video {
 .dekstop {
 	display: none;
 }
+.andrea {
+	margin-top: 22px;
+}
 
+.learn{
+	margin-top: 22px;
+}
+}
+@media screen and (min-width: 375px) {
+.andrea {
+	margin-top: 44px;
+}
+
+.learn{
+	margin-top: 44px;
+}
+}
 @media screen and (min-width: 610px) {
 }
 
