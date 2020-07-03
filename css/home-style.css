@@ -158,7 +158,7 @@ body {
 
 .how {
 	height: 100%;
-	margin: 90px 16px 0 16px;
+	margin: 90px 16px 0 0;
 	font-family: Helvetica;
 	color: rgba(77,77,27,0.8);
 	z-index: 1;
