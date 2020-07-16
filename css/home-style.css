@@ -312,16 +312,8 @@ video {
 }
 
 .collapsible {
-  border-bottom-style: solid;
-  border-bottom-width: thin;
-  border-bottom-color: #4d4d1b;
-  padding: 0;
   font-family: "Arial", Helvetica, sans-serif;
   cursor: pointer;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
   font-size: 10px;
 }
 
@@ -329,7 +321,6 @@ video {
   content: '\002B';
   font-weight: bold;
   float: right;
-  margin-left: 5px;
 }
 
 .active:after {
