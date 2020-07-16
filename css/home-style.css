@@ -315,6 +315,8 @@ video {
   font-family: "Arial", Helvetica, sans-serif;
   cursor: pointer;
   font-size: 10px;
+  text-align: left;
+  padding: 0;
 }
 
 .collapsible:after {
