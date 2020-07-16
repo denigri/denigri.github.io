@@ -312,11 +312,8 @@ video {
 }
 
 .collapsible {
-  background-color: #777;
   font-family: "Arial", Helvetica, sans-serif;
-  color: white;
   cursor: pointer;
-  padding: 18px;
   width: 100%;
   border: none;
   text-align: left;
