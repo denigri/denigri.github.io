@@ -332,6 +332,10 @@ video {
   margin-left: 5px;
 }
 
+.active:after {
+  content: "\2212";
+}
+
 .collapsible__content {
   max-height: 0;
   overflow: hidden;
