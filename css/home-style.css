@@ -335,6 +335,7 @@ video {
   transition: max-height 0.2s ease-out;
   font-family: "Arial", Helvetica, sans-serif;
   font-size: 10px;
+  margin: 5px 0 0 0;
 }
 
 @media screen and (min-width: 320px) {
