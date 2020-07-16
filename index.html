@@ -147,10 +147,12 @@ viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve
 					<div class="post">
 						<div class="column columnrationale">
 							<div class="titolo">
-								<ul class="titolo-tag">
-							<li class="cliente">Rationale Coffee Roasters</li>
-									<li class="tag-cliente">Branding, Logo Design</li>
-								</ul>
+								<button class="collapsible">Rationale Coffee Roasters</button>
+								<div class="collapsible__content">
+									<button class="collapsible__tag">Branding</button>
+									<button class="collapsible__tag">Logo Design</button>
+									<p>Rationale Coffee Roasters is an Italian micro roastery and a retail. Specialty coffee market is growing significantly in Italy. And even though Italy invented the word barista ☕️, the quality of roasting and the ways how coffee is served and prepared are too low. The request was to codify and visualize the idea of the perfect coffee, the right preparation and the required knowledge to enjoy it.</p>
+								</div>
 							</div>
 							<figure class="mobile">
 							<img src ="post/rationale-ok.png" alt="Milano">
@@ -304,6 +306,21 @@ function scrollTranslatesx() {
     occhio2.style.transform = "translateY(" + window.pageYOffset/-1300 + "px)"
 }
 
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (collapsible__content.style.maxHeight){
+      collapsible__content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}		
+		
 </script>
 </body>
 </html>
