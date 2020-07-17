@@ -346,9 +346,12 @@ video {
   border-top-color: #4d4d1b;
 }
 
+.fa fa-angle-down {
+	font-size: 15px;	
+}
+
 .arrow1 {
 	float: right;
-	font-size: 15px;
 	animation: slide1 1s ease-in-out infinite;
 }
 
