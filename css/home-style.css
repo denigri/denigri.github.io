@@ -315,18 +315,6 @@ video {
   padding: 0;
 }
 
-.collapsible:after {
-  content: '\003E';
-  font-weight: bold;
-  float: right;
-  transform: rotate(90deg);
-}
-
-.active:after {
-  content: '\003E';
-  transform: rotate(270deg);
-}
-
 .collapsible__tag {
   margin: 0 5px 0 0;
   font-family: "Arial", Helvetica, sans-serif;
