@@ -346,7 +346,7 @@ video {
   border-top-color: #4d4d1b;
 }
 
-.fa {
+.arrow1 {
 	float: right;
 	font-size: 15px;
 	animation: slide1 1s ease-in-out infinite;
@@ -359,7 +359,7 @@ video {
   }
 
   50% {
-    transform: translate(0, 10px);
+    transform: translate(0, 5px);
   }
 }
 
