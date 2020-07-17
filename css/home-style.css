@@ -319,12 +319,12 @@ video {
   content: '\003E';
   font-weight: bold;
   float: right;
-  rotate: 90deg;
+  transform: rotate(90deg);
 }
 
 .active:after {
   content: '\003E';
-  rotate: 270deg;
+  transform: rotate(270deg);
 }
 
 .collapsible__tag {
