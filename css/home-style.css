@@ -274,6 +274,8 @@ video {
   cursor: pointer;
   font-size: 20px;
   padding: 20px 8px 10px 8px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .collapsible__tag {
@@ -290,9 +292,6 @@ video {
   font-size: 10px;
   margin: 5px 0 0 0;
   padding: 5px 0 0 0;
-  border-top-style: solid;
-  border-top-width: thin;
-  border-top-color: #4d4d1b;
 }
 
 .arrow1 {
