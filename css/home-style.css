@@ -297,7 +297,8 @@ video {
 .arrow1 {
 	float: right;
 	animation: slide1 1s ease-in-out infinite;
-	width: 2.5%;
+	width: 26px;
+	height: 26px;
 }
 
 @keyframes slide1 {
