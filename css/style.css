@@ -11,6 +11,8 @@ body {
   font-family: Helvetica,Arial,sans-serif;
   color: rgba(246,246,246,1);
   margin: 0;
+  overscroll-behavior-y: contain;
+  overscroll-behavior: none;
 }
 a:link {
   text-decoration: none;
