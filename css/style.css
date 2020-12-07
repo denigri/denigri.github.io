@@ -1,0 +1,230 @@
+:root {
+box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+body {
+  background-color: rgba(34,34,33,1);
+  font-family: Helvetica,Arial,sans-serif;
+  color: rgba(246,246,246,1);
+  margin: 0;
+  overscroll-behavior-y: contain;
+  overscroll-behavior: none;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  color: rgba(255,255,204,1);
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  background-color: rgba(255,255,255,0.5);
+}
+.container {
+}
+header {
+  position: fixed;
+  z-index: 1;
+  top: 2.062em;
+  margin-left: 1em;
+  background-color: rgba(34,34,33,1);
+  padding: 0.25em 0.75em;
+  cursor: pointer;
+}
+.arrow {
+  position: absolute;
+  width: 1.5em;
+  height: 1.5em;
+  background-color: rgba(255, 255, 0,1);
+  top: 0;
+  right: -1.5em;
+}
+.arrow::after {
+  content: '';
+  border: 0.45em solid;
+  border-color: rgba(34,34,33,1) transparent transparent;
+  position: absolute;
+  top: 39%;
+  right: 23%;
+  cursor: pointer;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 1.5em;
+  width: calc(100% + 1.5em);
+}
+header:hover .dropdown-menu {
+  display: block;
+}
+.submenu {
+  padding-left: 0;
+  margin-top: 0.4em;
+  list-style: none;
+}
+.submenu > li + li {
+  border-top: 1px solid rgba(34,34,33,0.3);
+}
+.submenu > li > a {
+  display: block;
+  padding: .5em .75em;
+  color: rgba(254,254,254,1);
+  text-shadow: 1px 1px rgba(34,34,33,0.4);
+  text-decoration: none;
+}
+.submenu > li > a:hover {
+  background-color: rgba(34,34,33,0.3);
+  color: rgba(255,255,0,1);
+}
+.submenu > li > a:active {
+  background-color: rgba(34,34,33,0.3);
+  color: rgba(255,255,0,1);
+}
+.active {
+  background-color: rgba(34,34,33,0.3);
+  color: rgba(255,255,0,1);
+}
+svg {
+  width: 4.2em;
+  position: fixed;
+  z-index: 1;
+  top: 2.062em;
+  right: 1em;
+}
+.slides {
+  display: grid;
+  grid-template-columns: repeat(6, 100vw);
+  scroll-snap-type: both mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 100vh;
+}
+.slide {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 100vw;
+  height: 100vh;
+  margin-right: 0;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  overflow-y: hidden;
+}
+img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slide-title {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  padding: 0 1.625em;
+  margin-bottom: 2rem;
+}
+.slide-title__inner {
+  top: 0;
+  width: 75%;
+}
+.slide-title__inner p {
+  color: rgba(255,255,0,1);
+  margin: 0;
+  width: 75%;
+  font-size: 1.5em;
+  text-shadow: 1px 1px rgba(34,34,33,0.4);
+  position: relative;
+}
+.slide-title::after {
+  content: '\203A';
+  transform: rotate(90deg);
+  position: absolute;
+  right: calc(0px + 0.7em);
+  font-size: 2em;
+  width: 1em;
+  border-radius: 1em;
+  background-color: rgba(255,255,0,0.9);
+  text-align: center;
+  color: rgba(34,34,33,0.8);
+  text-shadow: none;
+  top: -0.4rem;
+  cursor: pointer;
+}
+.slide-title__inner ul {
+  padding: 0;
+  margin: 0;
+}
+.slide-title__inner ul li {
+  display: inline-block;
+  font-size: 0.937em;
+  margin-right: 0.75em;
+  margin-top: 0.75em;
+  padding: 0.15em 0.75em;
+  list-style: none;
+  background-color: rgba(34,34,33,0.2);
+  border: 1px solid rgba(255,255,0,1);
+  text-align: center;
+}
+.tablet {
+  display: none;
+}
+.dekstop {
+  display: none;
+}
+.mobile {
+}
+.menu {
+  position: fixed;
+  bottom: 0;
+  margin: 1.55em auto;
+  display: flex;
+  justify-content: space-between;
+  right: 0;
+  left: 0;
+  border-top: 1px solid rgba(246,246,246,0.4);
+  border-bottom: 1px solid rgba(246,246,246,0.4);
+}
+.menu a {
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0.55rem 1.625rem;
+}
+
+@media screen and (min-width: 537px) and (min-height:) {
+  .tablet {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+  .dekstop {
+    display: none;
+  }
+  body {
+    font-size: 1.2rem;
+  }
+  .slide-title::after {
+    right: calc(0px + 0.5em);
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .tablet {
+    display: none;
+  }
+  .mobile {
+    display: none;
+  }
+.dekstop {
+  display: block;
+}
+}

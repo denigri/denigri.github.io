@@ -1,342 +1,180 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script type="text/javascript" src="d3.min.js"></script>
 <title>Denigri - Designer</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" href="favicon-2.png">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta charset="UTF-8">
 </head>
 <body>
-<div class="wrapper">
-  <div class="header">
-    <p class="andrea">2020, Andrea Denigri</p>
-    <p class="bio">Graphic, animation, writing.</p>
-  </div>
-    <div class="post">
-      <svg id="groupPost" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 349.5 422.5">
-
-      <path d="M36.37 2.71A35.13 35.13 0 1071.5 37.84 35.17 35.17 0 0036.37 2.71z" fill="#330"/>
-      <circle cx="34.89" cy="34.89" r="34.39" fill="#fdfeff" stroke="#330" stroke-miterlimit="10"/>
-      <circle a href="blonde.html" class="projects-selected" cx="36.82" cy="38.36" r="23.03"/>
-      <path class="svgpink" d="M8.17 56.77a34.38 34.38 0 0053.45 0zM69.29 35.08a34.4 34.4 0 00-68.79 0z"/>
-
-<rect class="title-box pink" onclick="currentSlide(1)" width="46" height="20" rx="3.95" ry="3.95"/>
-<text class="box-text pink" onclick="currentSlide(1)" transform="translate(9.81 14.86)">click</text>
-
-            <path data-name="ombra" d="M221.7 88.01a35.14 35.14 0 1035.13 35.14 35.17 35.17 0 00-35.13-35.14z" fill="#330"/>
-            <circle data-name="iride" cx="220.23" cy="120.2" r="34.39" fill="#fdfeff" stroke="#330" stroke-miterlimit="10"/>
-            <circle class="projects-selected" data-name="pupilla" cx="222.15" cy="123.66" r="23.03"/>
-            <path class="svgpink" d="M193.5 142.07a34.38 34.38 0 0053.45 0zM254.62 120.39a34.4 34.4 0 10-68.79 0z"/>
-
-<rect class="title-box pink" style="transform: translate(233px,139px);" onclick="currentSlide(2)" width="46" height="20" rx="3.95" ry="3.95"/>
-<text class="box-text pink" style="transform: translate(242px,153px);" onclick="currentSlide(2)" transform="translate(9.81 14.86)">click</text>
-
-            <path data-name="ombra" d="M129.03 172.76a35.13 35.13 0 1035.14 35.13 35.17 35.17 0 00-35.14-35.13z" fill="#330"/>
-            <circle data-name="iride" cx="127.56" cy="204.94" r="34.39" fill="#fdfeff" stroke="#330" stroke-miterlimit="10"/>
-            <circle class="projects-selected" data-name="pupilla" cx="129.49" cy="208.4" r="23.03"/>
-            <path class="svgpink" d="M100.83 226.81a34.39 34.39 0 0053.46 0zM161.95 205.13a34.39 34.39 0 10-68.78 0z"/>
-
-<rect class="title-box pink" style="transform: translate(140px,223px);" onclick="currentSlide(3)" width="46" height="20" rx="3.95" ry="3.95"/>
-<text class="box-text pink" style="transform: translate(149px,237px);" onclick="currentSlide(3)" transform="translate(9.81 14.86)">click</text>
-
-                <path data-name="ombra" d="M36.37 256.93a35.14 35.14 0 1035.13 35.14 35.17 35.17 0 00-35.13-35.14z" fill="#330"/>
-                <circle data-name="iride" cx="34.89" cy="289.12" r="34.39" fill="#fdfeff" stroke="#330" stroke-miterlimit="10"/>
-                <circle class="projects-selected" data-name="pupilla" cx="36.82" cy="292.58" r="23.03"/>
-                <path class="svgpink" d="M8.17 310.99a34.38 34.38 0 0053.45 0zM69.29 289.31a34.4 34.4 0 10-68.79 0z"/>
-
-<rect class="title-box pink" style="transform: translate(46px,307px);" onclick="currentSlide(4)" width="46" height="20" rx="3.95" ry="3.95"/>
-<text class="box-text pink" style="transform: translate(55px,321px);" onclick="currentSlide(4)" transform="translate(9.81 14.86)">click</text>
-
-                <path data-name="ombra" d="M221.7 257.5a35.13 35.13 0 1035.13 35.13 35.17 35.17 0 00-35.13-35.13z" fill="#330"/>
-                <circle data-name="iride" cx="220.23" cy="289.68" r="34.39" fill="#fdfeff" stroke="#330" stroke-miterlimit="10"/>
-                <circle class="projects-selected" data-name="pupilla" cx="222.15" cy="293.14" r="23.03"/>
-                <path class="svgpink" d="M193.5 311.55a34.37 34.37 0 0053.45 0zM254.62 289.87a34.4 34.4 0 10-68.79 0z"/>
-
-<rect class="title-box pink" style="transform: translate(233px,307px);" onclick="currentSlide(5)" width="46" height="20" rx="3.95" ry="3.95"/>
-<text class="box-text pink" style="transform: translate(242px,321px);" onclick="currentSlide(5)" transform="translate(9.81 14.86)">click</text>
-
-                <path data-name="ombra" d="M36.37 341.68a35.13 35.13 0 1035.13 35.13 35.16 35.16 0 00-35.13-35.13z" fill="#330"/>
-                <circle data-name="iride" cx="34.89" cy="373.86" r="34.39" fill="#fdfeff" stroke="#330" stroke-miterlimit="10"/>
-                <circle class="projects-selected" data-name="pupilla" cx="36.82" cy="377.32" r="23.03"/>
-                <path class="svgpink" d="M8.17 395.73a34.38 34.38 0 0053.45 0zM69.29 374.05a34.4 34.4 0 10-68.79 0z"/>
-
-<rect class="title-box pink" style="transform: translate(46px,393px);" onclick="currentSlide(6)" width="46" height="20" rx="3.95" ry="3.95"/>
-<text class="box-text pink" style="transform: translate(55px,407px);" onclick="currentSlide(6)" transform="translate(9.81 14.86)">click</text>
-
-      <path data-name="ombra" d="M129.03 3.27a35.14 35.14 0 1035.14 35.13 35.17 35.17 0 00-35.14-35.13z" fill="#330"/>
-      <circle data-name="iride" cx="127.56" cy="35.46" r="34.39" fill="#fdfeff" stroke="#330" stroke-miterlimit="10"/>
-      <circle class="readings-selected"  data-name="pupilla" cx="129.49" cy="38.92" r="23.03"/>
-      <path data-name="palp" d="M161.95 35.64a34.39 34.39 0 10-68.78 0zM100.83 57.33a34.39 34.39 0 0053.46 0z" fill="#ff0" stroke="#330" stroke-miterlimit="10"/>
-
-      <rect class="title-box green" style="transform: translate(140px, 54px)" onclick="currentSlide(7)" width="46" height="20" rx="3.95" ry="3.95"/>
-      <text class="box-text green" style="transform: translate(149px,68px);" onclick="currentSlide(7)" transform="translate(9.81 14.86)">click</text>
-
-      <path data-name="ombra" d="M221.7 3.27a35.14 35.14 0 1035.13 35.13A35.17 35.17 0 00221.7 3.27z" fill="#330"/>
-      <circle data-name="iride" cx="220.23" cy="35.46" r="34.39" fill="#fdfeff" stroke="#330" stroke-miterlimit="10"/>
-      <circle data-name="pupilla" cx="222.15" cy="38.92" r="23.03" fill="#330"/>
-      <path data-name="palpdown" d="M193.5 57.33a34.38 34.38 0 0053.45 0z" fill="#ff0" stroke="#330" stroke-miterlimit="10"/>
-      <path data-name="palp" d="M254.62 35.64a34.4 34.4 0 00-68.79 0z" fill="#ff0" stroke="#330" stroke-miterlimit="10"/>
-
-      <path data-name="ombra" d="M314.37 2.71a35.13 35.13 0 1035.13 35.13 35.17 35.17 0 00-35.13-35.13z" fill="#330"/>
-      <circle data-name="iride" cx="312.89" cy="34.89" r="34.39" fill="#fdfeff" stroke="#330" stroke-miterlimit="10"/>
-      <circle data-name="pupilla" cx="314.82" cy="38.36" r="23.03" fill="#330"/>
-      <path data-name="palpdown" d="M286.17 56.77a34.38 34.38 0 0053.45 0z" fill="#ff0" stroke="#330" stroke-miterlimit="10"/>
-      <path data-name="palp" d="M347.29 35.08a34.4 34.4 0 00-68.79 0z" fill="#ff0" stroke="#330" stroke-miterlimit="10"/>
-
-      <path data-name="ombra" d="M36.37 87.5a35.14 35.14 0 1035.13 35.08A35.17 35.17 0 0036.37 87.5z" fill="#330"/>
-      <circle data-name="iride" cx="34.89" cy="119.63" r="34.39" fill="#fdfeff" stroke="#330" stroke-miterlimit="10"/>
-      <circle class="readings-selected" data-name="pupilla" cx="36.82" cy="123.1" r="23.03"/>
-      <path data-name="palp" d="M69.29 119.82a34.4 34.4 0 00-68.79 0zM8.17 141.5a34.38 34.38 0 0053.45 0z" fill="#ff0" stroke="#330" stroke-miterlimit="10"/>
-
-      <rect class="title-box green" onclick="currentSlide(8)" style="transform: translate(46px,139px);" width="46" height="20" rx="3.95" ry="3.95"/>
-      <text class="box-text green" onclick="currentSlide(8)" style="transform: translate(55px, 153px);">click</text>
-
-      <path data-name="ombra" d="M129.03 88.01a35.14 35.14 0 1035.14 35.14 35.17 35.17 0 00-35.14-35.14z" fill="#330"/>
-      <circle data-name="iride" cx="127.56" cy="120.2" r="34.39" fill="#fdfeff" stroke="#330" stroke-miterlimit="10"/>
-      <circle data-name="pupilla" cx="129.49" cy="123.66" r="23.03" fill="#330"/>
-      <path data-name="palpdown" d="M100.83 142.07a34.39 34.39 0 0053.46 0z" fill="#ff0" stroke="#330" stroke-miterlimit="10"/>
-      <path data-name="palp" d="M161.95 120.39a34.39 34.39 0 10-68.78 0z" fill="#ff0" stroke="#330" stroke-miterlimit="10"/>
-      <path data-name="ombra" d="M314.37 87.5a35.14 35.14 0 1035.13 35.08 35.17 35.17 0 00-35.13-35.08z" fill="#330"/>
-      <circle data-name="iride" cx="312.89" cy="119.63" r="34.39" fill="#fdfeff" stroke="#330" stroke-miterlimit="10"/>
-      <circle data-name="pupilla" cx="314.82" cy="123.1" r="23.03" fill="#330"/>
-      <path data-name="palpdown" d="M286.17 141.5a34.38 34.38 0 0053.45 0z" fill="#ff0" stroke="#330" stroke-miterlimit="10"/>
-      <path data-name="palp" d="M347.29 119.82a34.4 34.4 0 00-68.79 0z" fill="#ff0" stroke="#330" stroke-miterlimit="10"/>
-
-      <path data-name="ombra" d="M36.37 172.19a35.14 35.14 0 1035.13 35.13 35.17 35.17 0 00-35.13-35.13z" fill="#330"/>
-      <circle data-name="iride" cx="34.89" cy="204.38" r="34.39" fill="#fdfeff" stroke="#330" stroke-miterlimit="10"/>
-      <circle  data-name="pupilla" cx="36.82" cy="207.84" r="23.03" fill="#330"/>
-      <path data-name="palpdown" d="M8.17 226.25a34.38 34.38 0 0053.45 0z" fill="#ff0" stroke="#330" stroke-miterlimit="10"/>
-      <path data-name="palp" d="M69.29 204.56a34.4 34.4 0 00-68.79 0z" fill="#ff0" stroke="#330" stroke-miterlimit="10"/>
-      <path data-name="ombra" d="M221.7 172.76a35.13 35.13 0 1035.13 35.13 35.17 35.17 0 00-35.13-35.13z" fill="#330"/>
-      <circle data-name="iride" cx="220.23" cy="204.94" r="34.39" fill="#fdfeff" stroke="#330" stroke-miterlimit="10"/>
-      <circle  data-name="pupilla" cx="222.15" cy="208.4" r="23.03" fill="#330"/>
-      <path data-name="palpdown" d="M193.5 226.81a34.38 34.38 0 0053.45 0z" fill="#ff0" stroke="#330" stroke-miterlimit="10"/>
-      <path data-name="palp" d="M254.62 205.13a34.4 34.4 0 10-68.79 0z" fill="#ff0" stroke="#330" stroke-miterlimit="10"/>
-
-      <path data-name="ombra" d="M314.37 172.19a35.14 35.14 0 1035.13 35.13 35.17 35.17 0 00-35.13-35.13z" fill="#330"/>
-      <circle data-name="iride" cx="312.89" cy="204.38" r="34.39" fill="#fdfeff" stroke="#330" stroke-miterlimit="10"/>
-      <circle data-name="pupilla" cx="314.82" cy="207.84" r="23.03" fill="#330"/>
-      <path data-name="palpdown" d="M286.17 226.25a34.38 34.38 0 0053.45 0z" fill="#ff0" stroke="#330" stroke-miterlimit="10"/>
-      <path data-name="palp" d="M347.29 204.56a34.4 34.4 0 00-68.79 0z" fill="#ff0" stroke="#330" stroke-miterlimit="10"/>
-      <path data-name="ombra" d="M129.03 257.5a35.13 35.13 0 1035.14 35.13 35.17 35.17 0 00-35.14-35.13z" fill="#330"/>
-      <circle data-name="iride" cx="127.56" cy="289.68" r="34.39" fill="#fdfeff" stroke="#330" stroke-miterlimit="10"/>
-      <circle data-name="pupilla" cx="129.49" cy="293.14" r="23.03" fill="#330"/>
-      <path data-name="palpdown" d="M100.83 311.55a34.38 34.38 0 0053.46 0z" fill="#ff0" stroke="#330" stroke-miterlimit="10"/>
-      <path data-name="palp" d="M161.95 289.87a34.39 34.39 0 10-68.78 0z" fill="#ff0" stroke="#330" stroke-miterlimit="10"/>
-      <path data-name="ombra" d="M314.37 256.93a35.14 35.14 0 1035.13 35.14 35.17 35.17 0 00-35.13-35.14z" fill="#330"/>
-      <circle data-name="iride" cx="312.89" cy="289.12" r="34.39" fill="#fdfeff" stroke="#330" stroke-miterlimit="10"/>
-      <circle data-name="pupilla" cx="314.82" cy="292.58" r="23.03" fill="#330"/>
-      <path data-name="palpdown" d="M286.17 310.99a34.38 34.38 0 0053.45 0z" fill="#ff0" stroke="#330" stroke-miterlimit="10"/>
-      <path data-name="palp" d="M347.29 289.31a34.4 34.4 0 10-68.79 0z" fill="#ff0" stroke="#330" stroke-miterlimit="10"/>
-      <path data-name="ombra" d="M129.03 342.24a35.13 35.13 0 1035.14 35.13 35.17 35.17 0 00-35.14-35.13z" fill="#330"/>
-      <circle data-name="iride" cx="127.56" cy="374.42" r="34.39" fill="#fdfeff" stroke="#330" stroke-miterlimit="10"/>
-      <circle class="readings-selected"  data-name="pupilla" cx="129.49" cy="377.88" r="23.03"/>
-      <path data-name="palp" d="M161.95 374.61a34.39 34.39 0 10-68.78 0zM100.83 396.29a34.38 34.38 0 0053.46 0z" fill="#ff0" stroke="#330" stroke-miterlimit="10"/>
-
-      <rect class="title-box green" onclick="currentSlide(9)" style="transform: translate(140px,393px);" width="46" height="20" rx="3.95" ry="3.95"/>
-      <text class="box-text green" onclick="currentSlide(9)" style="transform: translate(149px, 407px);">click</text>
-
-      <path data-name="ombra" d="M221.7 342.24a35.13 35.13 0 1035.13 35.13 35.17 35.17 0 00-35.13-35.13z" fill="#330"/>
-      <circle data-name="iride" cx="220.23" cy="374.42" r="34.39" fill="#fdfeff" stroke="#330" stroke-miterlimit="10"/>
-      <circle data-name="pupilla" cx="222.15" cy="377.88" r="23.03" fill="#330"/>
-      <path data-name="palpdown" d="M193.5 396.29a34.37 34.37 0 0053.45 0z" fill="#ff0" stroke="#330" stroke-miterlimit="10"/>
-      <path data-name="palp" d="M254.62 374.61a34.4 34.4 0 10-68.79 0z" fill="#ff0" stroke="#330" stroke-miterlimit="10"/>
-
-      <path data-name="ombra" d="M314.37 341.68a35.13 35.13 0 1035.13 35.13 35.16 35.16 0 00-35.13-35.13z" fill="#330"/>
-      <circle data-name="iride" cx="312.89" cy="373.86" r="34.39" fill="#fdfeff" stroke="#330" stroke-miterlimit="10"/>
-      <circle data-name="pupilla" cx="314.82" cy="377.32" r="23.03" fill="#330"/>
-      <path data-name="palpdown" d="M286.17 395.73a34.38 34.38 0 0053.45 0z" fill="#ff0" stroke="#330" stroke-miterlimit="10"/>
-      <path data-name="palp" d="M347.29 374.05a34.4 34.4 0 10-68.79 0z" fill="#ff0" stroke="#330" stroke-miterlimit="10"/>
-    </svg>
-    </div>
-        <div class="legenda">
-          <div class="legenda-item">
-            <div id="pink" class="legenda_button" onclick="changeClassPink(); currentSlide(1)">
-              <svg height="26" width="26">
-                <circle id="legenda_pink" cx="13" cy="13" r="10" stroke="rgba(51,51,0,1)" stroke-width="1" fill="rgba(255,255,0,1)"/>
-              </svg>
-              <div class="item">PROJECTS</div>
-            </div>
-            <div id="green" class="legenda_button" onclick="changeClassGreen(); currentSlide(7)">
-              <svg height="26" width="26">
-                <circle id="legenda_green" cx="13" cy="13" r="10" stroke="rgba(51,51,0,1)" stroke-width="1" fill="rgba(255,255,0,1)"/>
-              </svg>
-              <div class="item">READINGS</div>
-            </div>
-          </div>
-          <a href="https://www.instagram.com/franco_furto/" class="fa fa-instagram"></a>
-          <a href="#" class="fa fa-github"></a>
-          <a href="mailto:adenigri@gmail.com"" class="fa fa-envelope"></a>
-        </div>
-          <div class="preview">
-              <div class="preview_img">
-                <div class="img_post fade">
-                  <img class="mobile" src="blonde-salad.png" width="93px" height="93px" style="margin:0 0 0 29px">
-                  <img class="large" src="blonde-salad-ipad.jpg">
-                    <p>The Blonde Salad</p>
-                </div>
-                <div class="img_post fade">
-                  <img class="mobile" src="fitbit.png" width="93px" height="93px" style="margin:0 0 0 29px">
-                  <img class="large" src="fitbit-ipad.jpg">
-                    <p>Fitbit</p>
-                </div>
-                <div class="img_post fade">
-                  <img class="mobile" src="rationale-n.png" width="93px" height="93px" style="margin:0 0 0 29px">
-                  <img class="large" src="rationale-ipad.jpg">
-                    <p>Rationale Coffee Roasters</p>
-                </div>
-                <div class="img_post fade">
-                  <img class="mobile" src="sidequest-hylia-asset-n.png" width="93px" height="93px" style="margin:0 0 0 29px">
-                  <img class="large" src="sidequest-ipad.jpg">
-                    <p>Sidequest</p>
-                </div>
-                <div class="img_post fade">
-                  <img class="mobile" src="roche.png" width="93px" height="93px" style="margin:0 0 0 29px">
-                  <img class="large" src="roche-ipad.jpg">
-                    <p>Roche</p>
-                </div>
-                <div class="img_post fade">
-                  <img class="mobile" src="prada.png" width="93px" height="93px" style="margin:0 0 0 29px">
-                  <img class="large" src="prada-ipad.jpg">
-                    <p>Photography</p>
-                </div>
-                <div class="img_post fade">
-                  <img class="mobile" src="read.png" width="93px" height="93px" style="margin:0 0 0 29px">
-                  <img class="large" src="read.png">
-                    <p>How I made this site</p>
-                </div>
-                <div class="img_post fade">
-                  <img class="mobile" src="read.png" width="93px" height="93px" style="margin:0 0 0 29px">
-                  <img class="large" src="read.png">
-                    <p>Maps</p>
-                </div>
-                <div class="img_post fade">
-                  <img class="mobile" src="read.png" width="93px" height="93px" style="margin:0 0 0 29px">
-                  <img class="large" src="read.png">
-                    <p>Quarantine sex</p>
-                </div>
-                <a class="back" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="forward" onclick="plusSlides(1)">&#10095;</a>
-              </div>
-                  </svg>
-                </div>
-          <div class="bio-long"><p>I like abstractions, I write to understand. Sometimes I code. My main interests are into technology, critical thinking, motion, photography, Arts.</p>
-          </footer>
+  <div class="container">
+    <header id="header">
+      Andrea Denigri
+      <div class="arrow" onclick="dropDown()">
       </div>
-</div>
-<script type="text/javascript">
-function changeClassPink() {
-  var projects = document.querySelectorAll('.projects-selected');
-  var readings = document.querySelectorAll('.readings-selected-mobile');
-  var dots = document.getElementsByClassName("title-box pink");
-  var text = document.getElementsByClassName("box-text pink");
-  var dotsg = document.getElementsByClassName("title-box green");
-  var textg = document.getElementsByClassName("box-text green");
-
-for (let i = 0; i < projects.length; i++) {
-  projects[i].className.baseVal = "projects-selected-mobile";
+      <div class="dropdown-menu">
+        <ul class="submenu">
+          <li><a class="dot" id="dot1" href="#slide1" onclick="currentSlide(1)">The Blonde Salad</a></li>
+          <li><a class="dot" id="dot2" href="#slide2" onclick="currentSlide(2)">Rationale Coffee Roasters</a></li>
+          <li><a class="dot" id="dot3" href="#slide3" onclick="currentSlide(3)">Fitbit</a></li>
+          <li><a class="dot" id="dot4" href="#slide4" onclick="currentSlide(4)">Roche</a></li>
+          <li><a class="dot" id="dot5" href="#slide5" onclick="currentSlide(5)">Sidequest</a></li>
+          <li><a class="dot" id="dot6" href="#slide6" onclick="currentSlide(6)">Photography</a></li>
+        </ul>
+      </div>
+    </header>
+    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 85.15 37.52">
+      <path id="ombra" d="M68.21,2A17.93,17.93,0,1,0,86.14,19.91,17.95,17.95,0,0,0,68.21,2Z" transform="translate(-0.99 -0.33)" style="fill:#222221"/>
+      <circle id="iride" cx="66.47" cy="18.08" r="17.55" style="fill:#fefefe;stroke:#222221;stroke-miterlimit:10;stroke-width:1.0519236510025882px"/>
+      <circle id="pupilla" cx="66.47" cy="18.08" r="11.75" style="fill:#222221"/>
+      <path id="palpdown" d="M53.82,29.57a17.54,17.54,0,0,0,27.28,0Z" transform="translate(-0.99 -0.33)" style="fill:#ff0;stroke:#222221;stroke-miterlimit:10;stroke-width:1.0519236510025882px"/>
+      <path id="palp" d="M85,18.5a17.56,17.56,0,0,0-35.11,0Z" transform="translate(-0.99 -0.33)" style="fill:#ff0;stroke:#222221;stroke-miterlimit:10;stroke-width:1.0519236510025882px"/>
+      <path id="ombra-2" data-name="ombra" d="M19.82,2A17.93,17.93,0,1,0,37.75,19.91,17.95,17.95,0,0,0,19.82,2Z" transform="translate(-0.99 -0.33)" style="fill:#222221"/>
+      <circle id="iride-2" data-name="iride" cx="18.08" cy="18.08" r="17.55" style="fill:#fefefe;stroke:#222221;stroke-miterlimit:10;stroke-width:1.0519236510025882px"/>
+      <circle id="pupilla2" data-name="pupilla" cx="18.08" cy="18.08" r="11.75" style="fill:#222221"/>
+      <path id="palpdown-2" data-name="palpdown" d="M5.43,29.57a17.54,17.54,0,0,0,27.28,0Z" transform="translate(-0.99 -0.33)" style="fill:#ff0;stroke:#222221;stroke-miterlimit:10;stroke-width:1.0519236510025882px"/>
+      <path id="palp-2" data-name="palp" d="M36.62,18.5a17.56,17.56,0,0,0-35.11,0Z" transform="translate(-0.99 -0.33)" style="fill:#ff0;stroke:#222221;stroke-miterlimit:10;stroke-width:1.0519236510025882px"/>
+    </svg>
+    <div class="slides">
+      <div class="slide" id="slide1">
+        <img class="mobile" src="img/blonde-salad.jpg">
+        <img class="tablet" src="img/blonde-salad-t.jpg">
+        <img class="dekstop" src="img/blonde-salad-d.jpg">
+        <div class="slide-title">
+        <div class="slide-title__inner">
+          <p>The Blonde Salad</p>
+        <ul class="tag">
+          <li>social media</li>
+          <li>photography</li>
+          <li>e-com</li>
+        </ul>
+      </div>
+    </div>
+      </div>
+      <div class="slide" id="slide2">
+        <img class="mobile" src="img/rationale.jpg">
+        <img class="tablet" src="img/rationale-t.jpg">
+        <img class="dekstop" src="img/rationale-d.jpg">
+        <div class="slide-title">
+        <div class="slide-title__inner">
+          <p>Rationale Coffee Roasters</p>
+        <ul class="tag">
+          <li>logo design</li>
+          <li>branding</li>
+        </ul>
+      </div>
+    </div>
+      </div>
+      <div class="slide" id="slide3">
+        <img class="mobile" src="img/fitbit.jpg">
+        <img class="tablet" src="img/fitbit-t.jpg">
+        <img class="dekstop" src="img/fitbit-d.jpg">
+        <div class="slide-title">
+        <div class="slide-title__inner">
+          <p>Fitbit</p>
+        <ul class="tag">
+          <li>social media</li>
+          <li>stories</li>
+        </ul>
+      </div>
+    </div>
+      </div>
+      <div class="slide" id="slide4">
+        <img class="mobile" src="img/roche.jpg">
+        <img class="tablet" src="img/roche-t.jpg">
+        <img class="dekstop" src="img/roche-d.jpg">
+        <div class="slide-title">
+        <div class="slide-title__inner">
+          <p>Roche</p>
+        <ul class="tag">
+          <li>motion graphics</li>
+          <li>trapcode</li>
+        </ul>
+      </div>
+    </div>
+      </div>
+      <div class="slide" id="slide5">
+        <img class="mobile" src="img/sidequest.jpg">
+        <img class="tablet" src="img/sidequest-t.jpg">
+        <img class="dekstop" src="img/sidequest-d.jpg">
+        <div class="slide-title">
+        <div class="slide-title__inner">
+          <p>Sidequest</p>
+          <ul class="tag">
+            <li>3D modelling</li>
+            <li>composit</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+      <div class="slide" id="slide6">
+        <img class="mobile" src="img/photo.jpg">
+        <img class="tablet" src="img/photo-t.jpg">
+        <img class="dekstop" src="img/photo-d.jpg">
+        <div class="slide-title">
+        <div class="slide-title__inner">
+          <p>Photography</p>
+          <ul class="tag" style="display:none;">
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <nav class="menu">
+      <a class="menu-section" id="about">About</a>
+      <a class="menu-section" id="projects">Projects</a>
+      <a class="menu-section" id="readings">Readings</a>
+  </nav>
+</body>
+<script>
+function dropDown() {
+    var header = document.querySelector('.dropdown-menu');
+    if (header.style.display === "block") {
+      header.style.display = "none";
+    } else {
+      header.style.display = "block";
+    }
 }
-for (let i = 0; i < readings.length; i++) {
-  readings[i].className.baseVal = "readings-selected";
-}
-
-for (let i = 0; i < dots.length; i++) {
-  dots[i].style.display = "none";
-  dots[i].style.display = "block";
-
-}
-for (let i = 0; i < text.length; i++) {
-  text[i].style.display = "none";
-  text[i].style.display = "block";
-}
-
-for (let i = 0; i < dotsg.length; i++) {
-  dotsg[i].style.display = "none";
-}
-
-for (let i = 0; i < textg.length; i++) {
-  textg[i].style.display = "none";
-}
-
-if (document.getElementById("legenda_pink").style.fill = "rgba(231,161,166,1)") {
-  document.getElementById("legenda_green").style.fill = "rgba(255,255,0,1)";
-
-}
-
-}
-
-function changeClassGreen() {
-  var readings = document.querySelectorAll('.readings-selected');
-  var projects = document.querySelectorAll('.projects-selected-mobile');
-  var dots = document.getElementsByClassName("title-box green");
-  var text = document.getElementsByClassName("box-text green");
-  var dotsp = document.getElementsByClassName("title-box pink");
-  var textp = document.getElementsByClassName("box-text pink");
-
-for (let i = 0; i < readings.length; i++) {
-  readings[i].className.baseVal = "readings-selected-mobile";
-}
-for (let i = 0; i < projects.length; i++) {
-  projects[i].className.baseVal = "projects-selected";
-}
-
-for (let i = 0; i < dots.length; i++) {
-  dots[i].style.display = "block";
-}
-for (let i = 0; i < text.length; i++) {
-  text[i].style.display = "block";
-}
-
-for (let i = 0; i < dotsp.length; i++) {
-  dotsp[i].style.display = "none";
-}
-
-for (let i = 0; i < textp.length; i++) {
-  textp[i].style.display = "none";
-}
-
-if (document.getElementById("legenda_green").style.fill = "rgba(61,222,26,1)") {
-  document.getElementById("legenda_pink").style.fill = "rgba(255,255,0,1)";
-}
-}
-
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
   var i;
-  var projects = document.querySelectorAll('.projects-selected-mobile');
-  var readings = document.querySelectorAll('.readings-selected-mobile');
-  var img = document.getElementsByClassName("img_post");
-  var dots = document.getElementsByClassName("title-box");
-  if (n > img.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = img.length}
-  for (i = 0; i < img.length; i++) {
-      img[i].style.display = "none";
-  }
+  var slides = document.getElementsByClassName("slide");
+  var dots = document.getElementsByClassName("dot");
+  var currentIndex = 0;
+
+
+
   for (i = 0; i < dots.length; i++) {
-      dots[i].className.baseVal = dots[i].className.baseVal.replace(" active color", "");
-    }
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
 
-  img[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className.baseVal += " active color";
-
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
 }
+var observer = new IntersectionObserver(function(entries) {
+	if(entries[0].isIntersecting === true)
+		console.log('Element is fully visible in screen');
+    }, { threshold: [0.7] });
 
+observer.observe(document.querySelector('#slide1'));
+observer.observe(document.querySelector('#slide2'));
+observer.observe(document.querySelector('#slide3'));
+observer.observe(document.querySelector('#slide4'));
+observer.observe(document.querySelector('#slide5'));
+observer.observe(document.querySelector('#slide6'));
 
 
 </script>
-</body>
 </html>
