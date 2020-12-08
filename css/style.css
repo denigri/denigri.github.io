@@ -106,13 +106,12 @@ svg {
   -webkit-overflow-scrolling: touch;
   overflow-x: auto;
   overflow-y: hidden;
-  height: 100vh;
 }
 .slide {
   scroll-snap-align: start;
   flex-shrink: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   margin-right: 0;
   transform-origin: center center;
   transform: scale(1);
