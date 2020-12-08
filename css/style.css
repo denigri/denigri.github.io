@@ -101,7 +101,7 @@ svg {
 .slides {
   display: grid;
   grid-template-columns: repeat(6, 100vw);
-  scroll-snap-type: both mandatory;
+  scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   overflow-x: auto;
