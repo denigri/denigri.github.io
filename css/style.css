@@ -1,6 +1,5 @@
 :root {
   box-sizing: border-box;
-  height: 100%;
 }
 *,
   ::before,
@@ -14,7 +13,6 @@ body {
   margin: 0;
   overscroll-behavior-y: contain;
   overscroll-behavior: none;
-  height: 100%;
 }
 a:link {
   text-decoration: none;
