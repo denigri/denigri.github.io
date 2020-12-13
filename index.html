@@ -126,6 +126,11 @@
     </div>
 </body>
 <script>
+window.onload = function () {
+	var header = document.querySelector('.dropdown-menu');
+	header.style.display = "block";
+}
+
 var carousel = document.querySelector('.slides');
 var elements = Array.from(document.querySelectorAll('.slide'));
 var indicators = Array.from(document.querySelectorAll('.dot'));
