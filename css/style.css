@@ -127,59 +127,54 @@ svg {
   margin: 0 auto;
   overflow-y: hidden;
 }
-.slide > img {
+
+.slide-inside {
+  display: none;
+}
+.none {
+  display: none;
+}
+.block {
+  display: block;
+}
+/* toggle main gallery overflow */
+.autoY {
+  overflow-y: auto;
+}
+.hiddenX {
+  overflow-x: hidden;
+}
+.slide-inside > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+.slide-inside > video {
+  width: 100%;
+}
+.slide > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  float: left;
+  opacity: 1;
+  transition: 700ms ease-in opacity;
+}
+
+/*height 0 mobile image */
+.slide > img.transition {
+  transition: 500ms ease-in-out height;
+  margin-top: -100vh;
+  transition: 700ms ease-in-out margin-top, 700ms ease-in opacity;
+  opacity: 0
+}
+
 .slide-title {
   position: absolute;
   bottom: 10%;
   width: 100%;
   padding: 0 1.625em;
   margin-bottom: 2rem;
-}
-.slide-title__inner {
-  top: 0;
-  width: 75%;
-}
-.slide-title__inner p {
-  color: rgba(255,255,0,1);
-  margin: 0;
-  width: 75%;
-  font-size: 1.5em;
-  text-shadow: 1px 1px rgba(34,34,33,0.4);
-  position: relative;
-}
-.slide-title::after {
-  content: '\203A';
-  transform: rotate(90deg);
-  position: absolute;
-  right: calc(0px + 0.7em);
-  font-size: 2em;
-  width: 1em;
-  border-radius: 1em;
-  background-color: rgba(255,255,0,0.9);
-  text-align: center;
-  color: rgba(34,34,33,0.8);
-  text-shadow: none;
-  top: -0.4rem;
-  cursor: pointer;
-}
-.slide-title__inner ul {
-  padding: 0;
-  margin: 0;
-}
-.slide-title__inner ul li {
-  display: inline-block;
-  font-size: 0.937em;
-  margin-right: 0.75em;
-  margin-top: 0.75em;
-  padding: 0.15em 0.75em;
-  list-style: none;
-  background-color: rgba(34,34,33,0.2);
-  border: 1px solid rgba(255,255,0,1);
-  text-align: center;
 }
 .section {
   font-family: 'Geogrotesque-Medium',sans-serif;
@@ -190,6 +185,8 @@ svg {
   position: absolute;
   grid-row: 1/2;
   bottom: -1px;
+  transition: 180ms ease-in-out opacity, 300ms ease-out transform;
+  opacity: 1;
 }
 .section > span {
   background-color: rgba(255,255,0,1);
@@ -198,13 +195,8 @@ svg {
 .section > span + span {
   padding-right: 0.8rem;
 }
-.tablet {
+.tablet, .dekstop {
   display: none;
-}
-.dekstop {
-  display: none;
-}
-.mobile {
 }
 .menu {
   position: fixed;
@@ -227,17 +219,17 @@ svg {
   width: 100%;
   color: rgba(34,34,33,1);
   grid-row: 2/3;
+  position: relative;
+  transition: 100ms ease-in-out margin-bottom;
 }
 
 .gallery-title-main {
   margin: 0 0.75rem;
+  width: 70%;
 }
 .gallery-title-tag {
   margin: 0 0.75rem;
-}
-
-.gallery-title-preview {
-  margin: 0 0.312rem;
+  width: 70%;
 }
 
 .gallery-title-preview-inside {
@@ -250,45 +242,171 @@ svg {
 .gallery-title-preview-inside > a {
   cursor: pointer;
   opacity: 0.8;
+  margin-bottom: 0;
 }
 .dot > img {
-  border: solid 1px rgba(34,34,33,1);
+  margin-bottom: -5px;
+}
+.mini-tablet {
+  display: none;
 }
 .title {
   display: none;
-  width: 70%;
   font-family: 'C800', sans-serif;
-  font-size: 1.191rem;
+  font-size: 1.16rem;
   margin: 0.812rem 0;
   line-height: 1.35;
 }
 
 .tag {
   display: none;
-  width: 70%;
   font-family: 'Geogrotesque-Medium', sans-serif;
-  font-size: 1.062rem;
+  font-size: 1.03rem;
   margin: 0 0 1.687rem 0;
 }
-.active1 {
+.activeMain {
+  display: block;
+  margin: 1.287rem 0 0.4rem 0;
+}
+.activeTag {
   display: block;
 }
 
-@media screen and (min-width: 537px) and (min-height:) {
+/*Arrow animation*/
+
+.arrow-down-close {
+  width: 2.7rem;
+  height: 2.7rem;
+  display: flex;
+  position: absolute;
+  top: 1.287rem;
+  right: 1.312rem;
+  background-color: rgb(255, 255, 0);
+  border-radius: 30px;
+  border: solid 1px rgb(34,34,33);
+}
+.arrow-down-close:before {
+  content: "";
+  display: inline-block;
+  height: 15px;
+  width: 4px;
+  background-color: rgb(34, 34, 33);
+  border-radius: 10px;
+  position: relative;
+  transition: 300ms ease-in-out transform;
+}
+
+.arrow-down-close:after {
+  content: "";
+  display: inline-block;
+  height: 15px;
+  width: 4px;
+  background-color: rgb(34, 34, 33);
+  border-radius: 10px;
+  position: relative;
+  transition: 300ms ease-in-out transform;
+}
+
+.arrow-down-close:before {
+  transform: rotate(-45deg);
+  left: 14px;
+  top: 14px;
+}
+.arrow-down-close:after {
+  transform: rotate(45deg);
+  left: 19px;
+  top: 14px;
+}
+.arrow-down-close.open:before {
+  transform: translateX(5px) rotate(-45deg) scale(1.7);
+  width: 3px;
+  background-color: rgb(255, 255, 0);
+}
+.arrow-down-close.open:after {
+  transform: translateX(-2px) rotate(45deg) scale(1.7);
+  width: 3px;
+  background-color: rgb(255, 255, 0);
+}
+
+.arrow-down-close.open {
+  background-color: rgba(34,34,33,1);
+}
+
+
+
+.container.mod {
+  overflow-y: hidden;
+}
+
+.gallery-title.mod {
+  margin-bottom: -85px;
+  transition: 300ms ease-in-out margin-bottom;
+  background-color
+}
+.section.mod {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+@media screen and (min-width: 537px) {
   .tablet {
     display: block;
   }
-  .mobile {
-    display: none;
-  }
-  .dekstop {
+  .mobile, .dekstop {
     display: none;
   }
   body {
     font-size: 1.2rem;
   }
-  .slide-title::after {
-    right: calc(0px + 0.5em);
+  .title{
+    font-size: 2.65rem;
+  }
+  .tag {
+    font-size: 1.875rem;
+  }
+  .section {
+    font-size: 1.375rem;
+  }
+  .dot > img {
+    width: 8.125rem;
+  }
+  .mini {
+    display: none;
+  }
+  .mini-tablet {
+    display: block;
+}
+.gallery-title-preview-inside > a {
+    margin-bottom: 0.312rem;
+}
+  .arrow-down-close {
+    border-radius: 2em;
+    width: 4.625rem;
+    height: 4.625rem;
+    top: 1.887rem;
+  }
+  .arrow-down-close:after {
+    left: 2.39rem;
+    top: 1.3rem;
+    height: 1.875rem;
+  }
+  .arrow-down-close:before {
+    left: 1.45rem;
+    top: 1.3rem;
+    height: 1.875rem;
+  }
+  .arrow-down-close.open:before {
+    width: 4px;
+    transform: translate(11px) rotate(45deg) scale(1.5);
+  }
+  .arrow-down-close.open:after {
+    width: 4px;
+    transform: translate(-7px) rotate(-45deg) scale(1.5);
+  }
+
+  /*Gallery title transition*/
+  .gallery-title.mod {
+    margin-bottom: -134px;
   }
 }
 
