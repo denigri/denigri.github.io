@@ -41,10 +41,12 @@ a:active {
 }
 .container {
   display: grid;
-  grid-template-rows: 80vh auto;
+  grid-template-rows: repeat(2, auto);
   grid-template-columns: 100vw;
   position: relative;
-  }
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+}
 header {
   position: fixed;
   z-index: 1;
