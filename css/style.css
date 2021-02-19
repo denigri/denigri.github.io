@@ -221,6 +221,9 @@ svg {
   grid-row: 2/3;
   position: relative;
   transition: 100ms ease-in-out margin-bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .gallery-title-main {
@@ -246,6 +249,7 @@ svg {
 }
 .dot > img {
   margin-bottom: -5px;
+  width: 69px;
 }
 .mini-tablet {
   display: none;
