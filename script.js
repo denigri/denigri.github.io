@@ -47,13 +47,14 @@ function appendDataTag(data) {
 	}
 }
 
-let vh = window.innerHeight * 0.01;
+// Adjust container vh with browser's address bar
+/* let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 window.addEventListener('resize', () => {
 	let vh = window.innerHeight * 0.01;
 	document.documentElement.style.setProperty('--vh', `${vh}px`);
-});
+}); */
 
 function dropDown() {
 	var header = document.querySelector('.dropdown-menu');
