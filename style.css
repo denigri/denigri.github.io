@@ -127,9 +127,12 @@ svg {
 
 .slide-inside {
   display: none;
+  height: 0;
+  transition: 500ms ease-in-out height;
 }
 .none {
   display: none;
+  height: 100%;
 }
 .block {
   display: block;
