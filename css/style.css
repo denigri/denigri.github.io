@@ -134,9 +134,12 @@ svg {
 }
 .none {
   display: none;
+  height: 0;
+  transition: 500ms ease-in-out height;
 }
 .block {
   display: block;
+  height: 100%;
 }
 /* toggle main gallery overflow */
 .autoY {
