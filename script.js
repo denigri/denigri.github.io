@@ -118,6 +118,10 @@ function activateIndicator(index) {
 	desktop.forEach((desktop, i) => {
 		desktop.classList.toggle('view', i === index);
 	});
+	const dots = document.querySelectorAll('.dots > div');
+	dots.forEach((dot, i) => {
+		dot.classList.toggle('selected', i === index);
+	});
 }
 
 // Close button
@@ -127,26 +131,22 @@ function openDropDown() {
 }
 function callback() {
 	const gallery = document.querySelector('.gallery-title');
-	const opacity = document.querySelector('.section');
 	const container = document.querySelector('.container');
 	gallery.classList.toggle('mod');
 	container.classList.toggle('mod');
-	opacity.classList.toggle('mod');
 	const divs = document.querySelector('.none');
 	Changetoggle(divs);
 	divs.classList.toggle('block');
 
 	function Changetoggle() {
-		const mobile = document.querySelectorAll('.view');
-			mobile.forEach(mobile => {
-			mobile.classList.toggle('transition');
-	});
+		const mobile = document.querySelector('.view');
+		mobile.classList.toggle('transition');
 		const slide = document.querySelector('.slide-view');
 		slide.classList.toggle('autoY');
 		const gallery = document.querySelector('.gallery-preview');
 		gallery.classList.toggle('hiddenX');
 	}
-	let mqd = window.matchMedia('(min-width: 1024px)');
+	let mqd = window.matchMedia('(min-width: 1366px)');
 	if (mqd.matches) {
 		const animation = document.querySelector('.gallery-title-preview');
 		animation.classList.toggle('mod');
