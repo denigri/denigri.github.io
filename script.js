@@ -130,7 +130,7 @@ function openDropDown() {
 	element.classList.toggle('open');
 }
 function callback() {
-	const svg = document.getElementByTagName('Layer_1');
+	const svg = document.getElementById('Layer_1');
 	svg.classList.toggle('none');
 	const gallery = document.querySelector('.gallery-title');
 	const container = document.querySelector('.container');
