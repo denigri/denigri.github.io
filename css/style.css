@@ -227,7 +227,8 @@ svg {
   transition: 100ms ease-in-out margin-bottom;
   grid-row: 2/3;
   bottom: 0;
-  border-top: solid 1.2px hsl(224, 100%, 93%);
+  background: hsla(59,38%, 22%, 0.15);
+  border-top: solid 1px hsla(59, 100%, 70%, 0.15);
 }
 
 .description {
