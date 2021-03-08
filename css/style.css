@@ -224,7 +224,7 @@ svg {
   position: absolute;
   transition: 100ms ease-in-out margin-bottom;
   grid-row: 2/3;
-  bottom: -44px;
+  bottom: 0;
   border-top: solid 1.2px hsl(224, 100%, 93%);
 }
 
