@@ -271,7 +271,6 @@ svg {
   position: absolute;
   top: 1.35rem;
   right: 1.5rem;
-  margin: 1.75rem 0 0;
 }
 .arrow-down-close:before {
   content: "";
