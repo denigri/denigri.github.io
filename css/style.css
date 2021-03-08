@@ -189,17 +189,16 @@ svg {
 
 .categories {
   font-size: 0.812rem;
-  font-family: 'Geogrotesque-Bold', sans serif;
+  font-family: 'Geogrotesque-Mediun', sans serif;
   text-transform: uppercase;
   display: flex;
   overflow: auto;
-  margin: 0;
+  margin-right: -0.625rem;
   color: hsla(224, 81%, 86%, 0.5);
 }
 .categories > span {
   border-right: solid 1px hsla(224,81%,86%, 0.3);
   padding: 0.812rem 1.625rem;
-  background-color: hsla(224,81%,86%, 0.4);
 
 }
 /* Dots */
