@@ -217,7 +217,7 @@ svg {
 .dots > div + div {
   margin-left: 0.353rem;	
 }
-.dots.selected {
+.dots div.selected {
   background-color: hsla(59, 100%, 86%, 1);
 }
 
