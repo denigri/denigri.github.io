@@ -188,13 +188,13 @@ svg {
 /* Titles and Categories */
 
 .categories {
-  font-size: 0.937rem;
+  font-size: 0.812rem;
   font-family: 'Geogrotesque-Bold', sans serif;
   text-transform: uppercase;
   display: flex;
   overflow: auto;
   margin: 0;
-  color: hsl(224, 81%, 86%);
+  color: hsla(224, 81%, 86%, 0.5);
 }
 .categories > span {
   border-right: solid 1px hsla(224,81%,86%, 0.3);
