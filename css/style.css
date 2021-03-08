@@ -47,10 +47,8 @@ a:active {
 .container {
   display: grid;
   grid-template-rows: repeat(2, auto);
-  grid-template-columns: 100vw;
+  grid-template-columns: 100%;
   height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
   /* height: 100vh;
   height: calc(var(--vh, 1vh) * 100); */
   }
@@ -136,6 +134,8 @@ svg {
 .slide {
   scroll-snap-align: start;
   flex-shrink: 0;
+  padding: 1rem;
+  padding-bottom: 0;
 }
 
 .slide-inside {
@@ -307,12 +307,12 @@ svg {
 .arrow-down-close.open:before {
   transform: translateX(5px) rotate(-45deg) scale(1.7);
   width: 3px;
-  background-color: hsl(59, 100%, 65%);
+  background: rgb(34,34,33);
 }
 .arrow-down-close.open:after {
   transform: translateX(-2px) rotate(45deg) scale(1.7);
   width: 3px;
-  background-color: hsl(59, 100%, 65%);
+  background: rgb(34,34,33);
 }
 
 .arrow-down-close.open {
@@ -325,7 +325,7 @@ svg {
 }
 
 .gallery-title.mod {
-  margin-bottom: -87px;
+  margin-bottom: -64px;
   transition: 300ms ease-in-out margin-bottom, 400ms ease-in background-color;
   background-color: hsl(224, 100%, 60%);
 }
