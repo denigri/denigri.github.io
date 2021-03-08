@@ -134,6 +134,8 @@ function callback() {
 	svg.style.display = 'none';
 	if (svg.style.display === 'block') {
 		svg.style.display = 'none';	
+	} else {
+		svg.style.display = 'block';	
 	}
 	const gallery = document.querySelector('.gallery-title');
 	const container = document.querySelector('.container');
