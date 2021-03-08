@@ -132,8 +132,8 @@ function openDropDown() {
 function callback() {
 	const svg = document.getElementById('Layer_1');
 	svg.style.display = 'none';
-	if (svg.style.display === 'none') {
-		svg.style.display = 'block';	
+	if (svg.style.display === 'block') {
+		svg.style.display = 'none';	
 	}
 	else {
 		svg.style.display = 'block';
