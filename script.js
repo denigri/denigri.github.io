@@ -130,6 +130,8 @@ function openDropDown() {
 	element.classList.toggle('open');
 }
 function callback() {
+	const svg = document.getElementByTagName('Layer_1');
+	svg.classList.toggle('none');
 	const gallery = document.querySelector('.gallery-title');
 	const container = document.querySelector('.container');
 	gallery.classList.toggle('mod');
@@ -145,8 +147,6 @@ function callback() {
 		slide.classList.toggle('autoY');
 		const gallery = document.querySelector('.gallery-preview');
 		gallery.classList.toggle('hiddenX');
-		const svg = document.getElementByTagName('svg');
-		svg.classList.toggle('none');
 	}
 	let mqd = window.matchMedia('(min-width: 1366px)');
 	if (mqd.matches) {
