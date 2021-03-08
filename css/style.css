@@ -193,7 +193,7 @@ svg {
   text-transform: uppercase;
   display: flex;
   overflow: auto;
-  color: hsla(224, 81%, 86%, 0.5);
+  color: rgba(34,34,33,0.5);
   padding:0 1rem 0.8rem;
 }
 .categories > span {
