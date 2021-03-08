@@ -215,7 +215,7 @@ svg {
   height: 0.375rem;
 }
 .selected {
-  background-color: hsl(224, 81%, 86%);
+  background-color: hsla(59, 100%, 86%, 1);
 }
 
 .gallery-title {
