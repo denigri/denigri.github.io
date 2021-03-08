@@ -132,6 +132,9 @@ function openDropDown() {
 function callback() {
 	const svg = document.getElementById('Layer_1');
 	svg.classList.toggle('none');
+	if (svg.style.display = 'none') {
+		svg.style.display = 'block';	
+	}
 	const gallery = document.querySelector('.gallery-title');
 	const container = document.querySelector('.container');
 	gallery.classList.toggle('mod');
