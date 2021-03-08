@@ -145,7 +145,7 @@ function callback() {
 		slide.classList.toggle('autoY');
 		const gallery = document.querySelector('.gallery-preview');
 		gallery.classList.toggle('hiddenX');
-		const svg = document.getElementByTag('svg');
+		const svg = document.getElementByTagName('svg');
 		svg.classList.toggle('none');
 	}
 	let mqd = window.matchMedia('(min-width: 1366px)');
