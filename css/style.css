@@ -189,7 +189,7 @@ svg {
 
 .categories {
   font-size: 0.812rem;
-  font-family: 'Geogrotesque-Mediun', sans serif;
+  font-family: 'Geogrotesque-Medium', sans-serif;
   text-transform: uppercase;
   display: flex;
   overflow: auto;
@@ -224,7 +224,6 @@ svg {
   grid-row: 2/3;
   bottom: 0;
   border-top: solid 1.2px hsl(224, 100%, 93%);
-  background-image: linear-gradient(to left, hsla(224,81%,86%,1), hsla(224,81%,86%,0));
 }
 
 .description {
