@@ -41,14 +41,13 @@ a:active {
 }
 .container-in {
   width: 100%;
-  height: calc(100% + 44px);
+  height: 100%;
   position: fixed;
 }
 .container {
   display: grid;
   grid-template-rows: repeat(2, auto);
   grid-template-columns: 100vw;
-  position: absolute;
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -67,10 +66,10 @@ a:active {
   cursor: pointer;
 }
 svg {
-  width: 4.2em;
+  width: 2.5em;
   position: fixed;
   z-index: 1;
-  top: 2.062em;
+  bottom: 0.8em;
   right: 1em;
 }
 .arrow {
@@ -129,9 +128,9 @@ svg {
   -webkit-overflow-scrolling: touch;
   overflow-x: auto;
   overflow-y: hidden;
-  grid-row: 1/3;
+  grid-row: 1/2;
   position: relative;
-  height: calc(100% + 44px);
+  height: 100%;
 }
 .slide {
   scroll-snap-align: start;
@@ -194,22 +193,21 @@ svg {
   text-transform: uppercase;
   display: flex;
   overflow: auto;
-  margin-left: -0.625rem;
   color: hsla(224, 81%, 86%, 0.5);
+  padding:0 1rem 0.8rem;
 }
 .categories > span {
-  padding: 0.812rem 1.625rem;
-
+  padding-right: 1.625rem;
 }
 /* Dots */
 
 .dots {
-  margin: 1.13rem 0.5rem 1.437rem;
+  margin: 1.13rem 1rem 1.437rem;
   display: inline-flex;
 }
 .dots > div {
   border-radius: 1em;
-  background-color:hsla(224, 81%, 86%, 0.6);
+  background-color:rgba(134,134,134,1);
   width: 0.375rem;
   height: 0.375rem;
   margin-right: 0.353rem; 
@@ -218,22 +216,21 @@ svg {
   margin-left: 0.353rem;	
 }
 .dots div.selected {
-  background-color: hsla(59, 100%, 86%, 1);
+  background-color: rgba(34,34,33,1);
 }
 
 .gallery-title {
   width: 100%;
-  position: absolute;
+  position: relative;
   transition: 100ms ease-in-out margin-bottom;
   grid-row: 2/3;
   bottom: 0;
-  background: hsla(59,38%, 22%, 0.15);
-  border-top: solid 1px hsla(59, 100%, 70%, 0.15);
+  background: rgb(255,255,0);
 }
 
 .description {
   position: relative;
-  padding: 1.25rem 1rem 0;
+  padding: 0.875rem 1rem 0;
 }
 
 .gallery-title-main {
@@ -243,7 +240,7 @@ svg {
 .title.activeMain {
   display: inline-block;
   margin: 0;
-  color: hsl(59, 100%, 75%);
+  color: rgb(34,34,33);
 }
 .title {
   display: none;
@@ -254,7 +251,7 @@ svg {
 }
 .gallery-title-tag {
   margin: 0;
-  color: hsl(224, 100%, 93%);
+  color: rgb(88,88,87);
 }
 .tag {
   display: none;
@@ -280,7 +277,7 @@ svg {
   display: inline-block;
   height: 14px;
   width: 4px;
-  background-color: hsl(224, 61%, 90%);
+  background-color: rgb(34,34,33);
   border-radius: 10px;
   position: relative;
   transition: 300ms ease-in-out transform;
@@ -291,7 +288,7 @@ svg {
   display: inline-block;
   height: 14px;
   width: 4px;
-  background-color: hsl(224, 61%, 90%);
+  background: rgb(34,34,33);
   border-radius: 10px;
   position: relative;
   transition: 300ms ease-in-out transform;
@@ -299,7 +296,7 @@ svg {
 
 .arrow-down-close:before {
   transform: rotate(-45deg);
-  left: 10px;
+  left: 11px;
   top: 11px;
 }
 .arrow-down-close:after {
