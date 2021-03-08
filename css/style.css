@@ -269,8 +269,8 @@ svg {
   width: 1.997rem;
   height: 1.997rem;
   position: absolute;
-  top: 0;
-  right: 0.6rem;
+  top: 1.35rem;
+  right: 1.5rem;
   margin: 1.75rem 0 0;
 }
 .arrow-down-close:before {
