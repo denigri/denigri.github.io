@@ -173,6 +173,7 @@ svg.none-svg {
 }
 .slide-inside > video {
   width: 100%;
+  padding-top: 1rem;
 }
 .slide > img {
   width: 100%;
