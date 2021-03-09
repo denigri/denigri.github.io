@@ -71,6 +71,9 @@ svg {
   bottom: 0.8em;
   right: 1em;
 }
+svg.none-svg {
+  display: none;
+}
 .arrow {
   width: 2.187em;
   height: 2.187em;
