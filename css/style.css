@@ -207,7 +207,11 @@ svg.none-svg {
   padding:0 1rem 0.8rem;
 }
 .categories > span {
-  padding-right: 1.625rem;
+  padding: 0.25rem 0.9rem;
+}
+#projects {
+  background: rgb(34,34,33);
+  color: rgb(355,255,0);
 }
 /* Dots */
 
@@ -334,7 +338,7 @@ svg.none-svg {
 }
 
 .gallery-title.mod {
-  margin-bottom: -59px;
+  margin-bottom: -66px;
   transition: 300ms ease-in-out margin-bottom, 400ms ease-in background-color;
   background: rgb(255,255,0);
 }
