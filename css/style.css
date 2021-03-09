@@ -330,7 +330,7 @@ svg.none-svg {
 }
 
 .gallery-title.mod {
-  /* margin-bottom: -59px; */
+  margin-bottom: -59px;
   transition: 300ms ease-in-out margin-bottom, 400ms ease-in background-color;
   background: rgb(255,255,0);
 }
