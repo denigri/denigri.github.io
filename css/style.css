@@ -168,6 +168,9 @@ svg.none-svg {
   object-fit: cover;
   float: right;
 }
+.slide-inside > img + img {
+  padding-top: 1rem;	
+}
 .slide-inside > video {
   width: 100%;
 }
