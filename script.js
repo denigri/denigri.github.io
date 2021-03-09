@@ -131,12 +131,7 @@ function openDropDown() {
 }
 function callback() {
 	const svg = document.getElementById('Layer_1');
-
-	if (svg.style.display === 'block') {
-		svg.style.display = 'none';	
-	} else if (svg.style.display === 'block') {
-		svg.style.display = 'none';	
-	}
+	svg.classList.toggle('none-svg');
 	const gallery = document.querySelector('.gallery-title');
 	const container = document.querySelector('.container');
 	gallery.classList.toggle('mod');
