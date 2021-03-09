@@ -1,3 +1,11 @@
+// Full screen
+window.addEventListener("load",function() {
+	// For iphone
+	setTimeout(function(){
+		window.scrollTo(0, 1);
+	}, 0);
+});
+
 var carousel = document.querySelector('.gallery-preview');
 var elements = Array.from(document.querySelectorAll('.slide'));
 var indicators = Array.from(document.querySelectorAll('.dot'));
