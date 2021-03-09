@@ -138,6 +138,8 @@ svg.none-svg {
 .slide {
   scroll-snap-align: start;
   flex-shrink: 0;
+  height: 100%;
+  overflow-y: scroll;
   padding: 1rem;
   padding-bottom: 0;
 }
