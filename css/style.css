@@ -72,7 +72,7 @@ svg {
   right: 1em;
 }
 svg.none-svg {
-  display: none;
+  bottom: -2em;
 }
 .arrow {
   width: 2.187em;
