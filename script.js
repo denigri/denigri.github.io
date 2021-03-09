@@ -153,4 +153,9 @@ function callback() {
 		const animation = document.querySelector('.gallery-title-preview');
 		animation.classList.toggle('mod');
 	}
-}	
+}
+const category = document.querySelector('#about');
+category.addEventListener('click', () => {
+const about = document.querySelector('.about');
+about.classList.toggle('about-none');
+});
