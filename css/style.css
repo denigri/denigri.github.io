@@ -57,7 +57,7 @@ a:active {
 svg {
   width: 2.5em;
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   bottom: 0.8em;
   right: 1em;
   transition: 300ms ease-out bottom;
@@ -116,6 +116,7 @@ svg.none-svg {
   background: rgb(255,255,0);
   height: 100%;
   display: none;
+  z-index: 1;
 }
 .about.about-none {
   display: block;
@@ -274,6 +275,7 @@ svg.none-svg {
   grid-row: 2/3;
   bottom: 0;
   background: rgb(255,255,0);
+  z-index: 2;
 }
 
 .description {
