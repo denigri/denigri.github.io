@@ -122,9 +122,11 @@ svg.none-svg {
 }
 #about.about-background {
   background: rgba(34,34,33,1);	
+  color: rgba(255,255,0,1);
 }
 #projects.project-background {
-  background: none;	
+  background: none;
+  color: rgba(34,34,33,0.5);
 }
 .about > h1 {
   font-family: 'C800', sans-serif;
