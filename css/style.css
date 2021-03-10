@@ -120,10 +120,10 @@ svg.none-svg {
 .about.about-none {
   display: block;
 }
-.about.about-background {
+#about.about-background {
   background: rgba(34,34,33,1);	
 }
-.project.project-background {
+#projects.project-background {
   background: none;	
 }
 .about > h1 {
