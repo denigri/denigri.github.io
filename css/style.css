@@ -110,7 +110,7 @@ svg.none-svg {
 
 .about {
   position: absolute;
-  color: rgb(34,34,33);
+  color: rgba(34,34,33, 0.8);
   padding: 1rem;
   padding-bottom: 0;
   background: rgb(255,255,0);
@@ -118,6 +118,7 @@ svg.none-svg {
   display: none;
   z-index: 1;
   overflow-y: auto;
+  font-family: 'Geogrotesque-Medium', sans-serif;
 }
 .about.about-none {
   display: block;
@@ -133,6 +134,7 @@ svg.none-svg {
 .about > h1 {
   font-family: 'C800', sans-serif;
   font-size: 1rem;
+  color: rgba(34,34,33,1);
 }
 .about > p {
   color: rgba(34,34,33,0.8);
