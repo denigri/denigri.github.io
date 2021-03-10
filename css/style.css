@@ -447,6 +447,11 @@ svg.none-svg {
   }
 }
 
+/* Gallery titles after About click */
+.description, .dots .titles-none {
+  display: none;	
+}
+
 @media screen and (min-width: 1024px) {
   .tablet {
     display: none;
