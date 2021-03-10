@@ -109,7 +109,7 @@ svg.none-svg {
 /* Main Gallery */
 
 .about {
-  position: absolute;
+  position: fixed;
   color: rgba(34,34,33, 0.8);
   padding: 1rem;
   padding-bottom: 0;
