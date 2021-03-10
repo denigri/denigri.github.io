@@ -112,11 +112,9 @@ svg.none-svg {
   position: fixed;
   color: rgba(34,34,33, 0.8);
   padding: 1rem;
-  padding-bottom: 0;
   background: rgb(255,255,0);
-  height: 100%;
+  height: calc(100% - 40px);
   display: none;
-  z-index: 1;
   overflow-y: auto;
   font-family: 'Geogrotesque-Medium', sans-serif;
 }
@@ -242,6 +240,7 @@ svg.none-svg {
   overflow: auto;
   color: rgba(34,34,33,0.5);
   padding:0 1rem 0.8rem;
+  height: 40px;
 }
 .categories > span {
   padding: 0.25rem 0.9rem;
