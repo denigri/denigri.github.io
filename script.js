@@ -160,6 +160,6 @@ const about = document.querySelector('.about');
 about.classList.toggle('about-none');
 const category = document.querySelector('#about');
 category.classList.toggle('about-background');
-const project = document.querySelector('#project');
+const project = document.querySelector('#projects');
 project.classList.toggle('project-background');
 });
