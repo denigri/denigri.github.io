@@ -115,6 +115,16 @@ svg.none-svg {
   padding-bottom: 0;
   background: rgb(255,255,0);
   height: 100%;
+  display: none;
+}
+.about.about-none {
+  display: none;
+}
+.about.about-background {
+  background: rgba(34,34,33,1);	
+}
+.project.project-background {
+  background: none;	
 }
 .about > h1 {
   font-family: 'C800', sans-serif;
