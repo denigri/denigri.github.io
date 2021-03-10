@@ -118,7 +118,7 @@ svg.none-svg {
   display: none;
 }
 .about.about-none {
-  display: none;
+  display: block;
 }
 .about.about-background {
   background: rgba(34,34,33,1);	
