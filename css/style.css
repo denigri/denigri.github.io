@@ -448,7 +448,7 @@ svg.none-svg {
 }
 
 /* Gallery titles after About click */
-.description .titles-none, .dots .titles-none {
+.description.titles-none, .dots.titles-none {
   display: none;	
 }
 
