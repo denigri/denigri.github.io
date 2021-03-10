@@ -162,4 +162,8 @@ const category = document.querySelector('#about');
 category.classList.toggle('about-background');
 const project = document.querySelector('#projects');
 project.classList.toggle('project-background');
+const description = document.querySelector('.description);
+description.classList.toggle('titles-none');
+const dots = document.querySelector('.dots);
+dots.classList.toggle('titles-none');
 });
