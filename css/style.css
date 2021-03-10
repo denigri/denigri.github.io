@@ -117,6 +117,7 @@ svg.none-svg {
   height: 100%;
   display: none;
   z-index: 1;
+  overflow-y: auto;
 }
 .about.about-none {
   display: block;
