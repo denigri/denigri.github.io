@@ -113,10 +113,10 @@ svg.none-svg {
   color: rgba(34,34,33, 0.8);
   padding: 1rem;
   background: rgb(255,255,0);
-  height: calc(100% - 2.187rem);
   display: none;
   overflow-y: auto;
   font-family: 'Geogrotesque-Medium', sans-serif;
+  height: 100%;
 }
 .about.about-none {
   display: block;
@@ -237,10 +237,8 @@ svg.none-svg {
   font-family: 'Geogrotesque-Medium', sans-serif;
   text-transform: uppercase;
   display: flex;
-  overflow: auto;
   color: rgba(34,34,33,0.5);
-  padding:0 1rem 0.8rem;
-  height: 2.187rem;
+  margin: 0 1em;
 }
 .categories > span {
   padding: 0.25rem 0.9rem;
@@ -274,14 +272,16 @@ svg.none-svg {
   position: relative;
   transition: 100ms ease-in-out margin-bottom;
   grid-row: 2/3;
-  bottom: 0;
   background: rgb(255,255,0);
-  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.875em 0;
 }
 
 .description {
   position: relative;
-  padding: 0.875rem 1rem 0;
+  padding: 0 1em;
 }
 
 .gallery-title-main {
@@ -449,7 +449,7 @@ svg.none-svg {
 
 /* Gallery titles after About click */
 .description.titles-none, .dots.titles-none {
-  display: none;	
+  opacity: 0;	
 }
 
 @media screen and (min-width: 1024px) {
