@@ -204,7 +204,7 @@ svg.none-svg {
   float: right;
 }
 .slide-inside > img + img {
-  padding-top: 1rem;	
+  padding-top: 0.5rem;	
 }
 .slide-inside > video {
   width: 100%;
