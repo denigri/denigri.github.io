@@ -171,8 +171,14 @@ const projects = document.querySelector('#projects');
 projects.addEventListener('click', () => {
 const about2 = document.getElementById('about-fixed').classList;
 if (about2.contains('about-none')) {
-    about2.remove('about-none');
-    } else {
-	    
-    }
+	about2.remove('about-none');
+	const category = document.querySelector('#about');
+	category.classList.remove('about-background');
+	const project = document.querySelector('#projects');
+	project.classList.remove('project-background');
+	const description = document.querySelector('.description');
+	description.classList.remove('titles-none');
+	const dots = document.querySelector('.dots');
+	dots.classList.remove('titles-none');
+    };
 });
