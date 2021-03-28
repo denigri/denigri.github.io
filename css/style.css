@@ -61,7 +61,7 @@ svg {
   position: fixed;
   z-index: 3;
   bottom: 1em;
-  right: 1em;
+  right: 0.8em;
   transition: 300ms ease-out bottom;
 }
 svg.none-svg {
@@ -240,7 +240,7 @@ svg.none-svg {
   text-transform: uppercase;
   display: flex;
   color: rgba(34,34,33,0.5);
-  margin: 0 1em;
+  margin: 0 0.5em;
 }
 .categories > span {
   padding: 0.25rem 0.9rem;
@@ -252,7 +252,7 @@ svg.none-svg {
 /* Dots */
 
 .dots {
-  margin: 1.13rem 1rem 1.437rem;
+  margin: 1.13rem 0.6rem 1.437rem;
   display: inline-flex;
 }
 .dots > div {
@@ -284,7 +284,7 @@ svg.none-svg {
 
 .description {
   position: relative;
-  padding: 0 1em;
+  padding: 0 0.5em;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -326,7 +326,7 @@ svg.none-svg {
   width: 1.997rem;
   height: 1.997rem;
   position: absolute;
-  right: 1.5rem;
+  right: 0.5rem;
 }
 .arrow-down-close:before {
   content: "";
