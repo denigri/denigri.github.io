@@ -119,6 +119,7 @@ svg.none-svg {
   overflow-y: auto;
   font-family: 'Geogrotesque-Medium', sans-serif;
   height: calc(100% - 1.5rem);
+  z-index: 2;
 }
 .about.about-none {
   display: block;
@@ -278,6 +279,7 @@ svg.none-svg {
   flex-direction: column;
   justify-content: flex-end;
   padding: 0.875em 0;
+  z-index: 2;
 }
 
 .description {
