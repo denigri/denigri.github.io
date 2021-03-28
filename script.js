@@ -170,5 +170,9 @@ dots.classList.toggle('titles-none');
 const projects = document.querySelector('#projects');
 projects.addEventListener('click', () => {
 const about2 = document.getElementById('about-fixed').classList;
-about2.contains('about-none')? about2.add('about-none'): about2.remove('about-none');
+if (about2.contains('about-none')) {
+    about2.remove('about-none');
+    } else {
+	    
+    }
 });
