@@ -118,7 +118,7 @@ svg.none-svg {
   display: none;
   overflow-y: auto;
   font-family: 'Geogrotesque-Medium', sans-serif;
-  height: 100%;
+  height: calc(100% - 1.5rem);
 }
 .about.about-none {
   display: block;
@@ -453,7 +453,7 @@ svg.none-svg {
 
 /* Gallery titles after About click */
 .description.titles-none, .dots.titles-none {
-  opacity: 0;	
+  display: none;	
 }
 
 @media screen and (min-width: 1024px) {
