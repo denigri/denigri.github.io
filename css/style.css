@@ -283,6 +283,10 @@ svg.none-svg {
 .description {
   position: relative;
   padding: 0 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
 }
 
 .gallery-title-main {
@@ -320,7 +324,6 @@ svg.none-svg {
   width: 1.997rem;
   height: 1.997rem;
   position: absolute;
-  top: 1.35rem;
   right: 1.5rem;
 }
 .arrow-down-close:before {
