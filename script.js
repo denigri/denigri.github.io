@@ -167,3 +167,8 @@ description.classList.toggle('titles-none');
 const dots = document.querySelector('.dots');
 dots.classList.toggle('titles-none');
 });
+const projects = document.querySelector('#projects');
+category.addEventListener('click', () => {
+const about = document.querySelector('.about');
+about.style.display = "none";
+});
