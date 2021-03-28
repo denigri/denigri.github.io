@@ -113,7 +113,7 @@ svg.none-svg {
 .about {
   position: fixed;
   color: rgba(34,34,33, 0.8);
-  padding: 1rem;
+  padding: 0.5rem;
   background: rgb(255,255,0);
   display: none;
   overflow-y: auto;
