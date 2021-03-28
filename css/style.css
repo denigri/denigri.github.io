@@ -174,7 +174,7 @@ svg.none-svg {
   flex-shrink: 0;
   height: 100%;
   overflow-y: scroll;
-  padding: 1rem;
+  padding: 0.5rem;
   padding-bottom: 0;
 }
 
@@ -275,7 +275,7 @@ svg.none-svg {
   background: rgb(255,255,0);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   padding: 0.875em 0;
 }
 
