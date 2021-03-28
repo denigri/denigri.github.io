@@ -169,6 +169,6 @@ dots.classList.toggle('titles-none');
 });
 const projects = document.querySelector('#projects');
 projects.addEventListener('click', () => {
-const about = document.querySelector('.about');
-about.style.display = "none";
+const about2 = document.querySelector('.about').classList;
+about2.contains('about-none')? about2.add('about-none'): about2.remove('about-none');
 });
