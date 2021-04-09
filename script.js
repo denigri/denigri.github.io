@@ -187,7 +187,7 @@ if (mqdDesktop.matches) {
 }
 }
 // Open Project
-const openProject = document.querySelectorAll('.slide');
+const openProject = document.querySelector('.slide-view');
 openProject.addEventListener('click', () => {
 	openDropDown();
 	callback();
