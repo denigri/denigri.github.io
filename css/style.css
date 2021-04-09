@@ -118,7 +118,7 @@ svg.none-svg {
   display: none;
   overflow-y: auto;
   font-family: 'Geogrotesque-Medium', sans-serif;
-  height: calc(100% - 4.5rem);
+  height: calc(100% - 3.562rem);
   z-index: 3;
 }
 .about.about-none {
@@ -241,6 +241,7 @@ svg.none-svg {
   display: flex;
   color: rgba(34,34,33,0.5);
   margin: 0 0.5rem;
+  min-height: 1.562rem;
 }
 .categories > span {
   padding: 0.25rem 0.9rem;
