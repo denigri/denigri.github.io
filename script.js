@@ -188,10 +188,7 @@ if (mqdDesktop.matches) {
 }
 // Open Project
 const openProject = document.querySelector('.slide-view');
-openProject.addEventListener('click', () => {
-	openDropDown();
-	callback();
-});
+openProject.addEventListener('click', callback);
 
 const category = document.querySelector('#about');
 category.addEventListener('click', () => {
