@@ -1,26 +1,32 @@
 [
   {
     "name": "The Blonde Salad",
-    "tag": "social media, photography, e-com"
+    "tag": "social media, photography, e-com",
+    "paragraph": "It was my first experience in a studio! Maybe Chiara Ferragni’s style doesn’t belong to me but it was fun. We were 20 people and I was the only designer inside. Before studying Graphics I learned Photography, so I pushed to get two strobes and few leds to create material for ecom, social etc."
   },
   {
     "name": "Rationale Coffee",
-    "tag": "logo design, branding"
+    "tag": "logo design, branding",
+    "paragraph": "Coffee Roasters is an italian micro roastery and a retail. Specialty coffee market is growing significantly in Italy. And even though Italy invented the word barista,the quality of roasting and the ways how coffee is served and prepared are too low. The request was to codify and visualize the idea of the perfect coffee, the right preparation and the required knowledge to enjoy it."
   },
   {
     "name": "Fitbit",
-    "tag": "social media, stories"
+    "tag": "social media, stories",
+    "paragraph": "We wanted to reproduce the different ways and situations of love. Every colour is linked to a portion of the LGBTQ community. I illustrated and animated the stories. I changed the colours of the famous rainbow flag to match with Fitbit’s color palette. 🌈"
   },
   {
     "name": "Roche",
-    "tag": "motion graphics, trapcode"
+    "tag": "motion graphics, trapcode",
+    "paragraph": "For the #NuovaLuceSullaSM campaign, we teamed up with ANTIMATERIA to create an immersive video and sound installation, composed of 4 light beams in order to make visible the voices and feelings of patients. I designed and animated the video case of this event."
   },
   {
     "name": "Sidequest",
-    "tag": "3d modelling, composit"
+    "tag": "3d modelling, composit",
+    "paragraph": "The request was to recreate the world of Sidequest, absorbed by his own room, a musical producer who loves videogames and being a teenager."
   },
   {
     "name": "Photography",
-    "tag": "personal"
+    "tag": "personal",
+    "paragraph": ""
   }
 ]

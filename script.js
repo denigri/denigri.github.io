@@ -16,6 +16,7 @@ function appendName(name) {
 function initialise(data) {
 	appendData(data);
 	appendDataTag(data);
+	appendDataParagraph(data);
 	activateIndicator(0);
 }
 
@@ -44,6 +45,15 @@ function appendDataTag(data) {
 		tagG.textContent = data[i].tag;
 		tagG.classList.add('tag');
 		tag.appendChild(tagG);
+	}
+}
+function appendDataParagraph(data) {
+	var paragraph = document.querySelector('.gallery-title-paragraph');
+	for (var i = 0; i < data.length; i++) {
+		var par = document.createElement('div');
+		par.textContent = data[i].paragraph;
+		par.classList.add('paragraph');
+		paragraph.appendChild(par);
 	}
 }
 
@@ -98,6 +108,10 @@ function activateIndicator(index) {
 	tags.forEach((tag, i) => {
 		tag.classList.toggle('activeTag', i === index);
 	});
+	const paragraphs = document.querySelectorAll('.paragraph');
+	paragraphs.forEach((paragraph, i) => {
+		paragraph.classList.toggle('activeParagraph', i === index);
+	});
 	const slide = document.querySelectorAll('.slide');
 	slide.forEach((slide, i) => {
 		slide.classList.toggle('slide-view', i === index);
@@ -108,15 +122,24 @@ function activateIndicator(index) {
 	});
 	const mobile = document.querySelectorAll('.mobile');
 	mobile.forEach((mobile, i) => {
+		let mqd = window.matchMedia('(max-width: 536px)');
+	if (mqd.matches) {
 		mobile.classList.toggle('view', i === index);
+	}
 	});
 	const tablet = document.querySelectorAll('.tablet');
 	tablet.forEach((tablet, i) => {
+		let mqd = window.matchMedia('(min-width: 537px) and (max-width: 974px)');
+	if (mqd.matches) {
 		tablet.classList.toggle('view', i === index);
+	}
 	});
 	const desktop = document.querySelectorAll('.desktop');
 	desktop.forEach((desktop, i) => {
+		let mqd = window.matchMedia('(min-width: 975px)');
+	if (mqd.matches) {
 		desktop.classList.toggle('view', i === index);
+	}
 	});
 	const dots = document.querySelectorAll('.dots > div');
 	dots.forEach((dot, i) => {
@@ -148,24 +171,33 @@ function callback() {
 		const gallery = document.querySelector('.gallery-preview');
 		gallery.classList.toggle('hiddenX');
 	}
-	let mqd = window.matchMedia('(min-width: 1366px)');
+	let mqd = window.matchMedia('(min-width: 537px)');
+	let mqdDesktop = window.matchMedia('(min-width: 975px)');
 	if (mqd.matches) {
-		const animation = document.querySelector('.gallery-title-preview');
-		animation.classList.toggle('mod');
+		const animation = document.querySelector('.tablet').classList;
+		if (animation.contains('.view')) {
+			animation.toggle('transition');
+		}
 	}
+if (mqdDesktop.matches) {
+	const animation = document.querySelector('.desktop').classList;
+	if (animation.contains('.view')) {
+		animation.toggle('transition');
+	}
+}
 }
 const category = document.querySelector('#about');
 category.addEventListener('click', () => {
 const about = document.querySelector('.about');
-about.classList.toggle('about-none');
+about.classList.add('about-none');
 const category = document.querySelector('#about');
-category.classList.toggle('about-background');
+category.classList.add('about-background');
 const project = document.querySelector('#projects');
-project.classList.toggle('project-background');
+project.classList.add('project-background');
 const description = document.querySelector('.description');
-description.classList.toggle('titles-none');
+description.classList.add('titles-none');
 const dots = document.querySelector('.dots');
-dots.classList.toggle('titles-none');
+dots.classList.add('titles-none');
 });
 const projects = document.querySelector('#projects');
 projects.addEventListener('click', () => {
