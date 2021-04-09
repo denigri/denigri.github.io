@@ -186,6 +186,13 @@ if (mqdDesktop.matches) {
 	}
 }
 }
+// Open Project
+const openProject = document.querySelectorAll('.slide');
+openProject.addEventListener('click', () => {
+	openDropDown();
+	callback();
+}
+
 const category = document.querySelector('#about');
 category.addEventListener('click', () => {
 const about = document.querySelector('.about');
