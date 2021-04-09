@@ -496,8 +496,8 @@ header {
 }
 /* svg */
 svg {
- right: calc(70% + 1.525rem);
- bottom: 1.525rem;
+ right: calc(70% + 1.225rem);
+ bottom: 1.225rem;
  width: 2.5rem;
 }
 
@@ -547,7 +547,7 @@ svg {
   bottom: 0;
   height: 100%;
   padding-left: 0.5rem;	  
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
 }
 .gallery-title-main {
   margin-bottom: 0.1rem;
