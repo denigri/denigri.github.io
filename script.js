@@ -187,9 +187,10 @@ if (mqdDesktop.matches) {
 }
 }
 // Open Project
+window.onload=function(){
 const openProject = document.querySelector('.slide-view');
 openProject.addEventListener('click', callback());
-
+};
 const category = document.querySelector('#about');
 category.addEventListener('click', () => {
 const about = document.querySelector('.about');
