@@ -118,7 +118,7 @@ svg.none-svg {
   display: none;
   overflow-y: auto;
   font-family: 'Geogrotesque-Medium', sans-serif;
-  height: calc(100% - 3.5rem);
+  height: calc(100% - 4.5rem);
   z-index: 3;
 }
 .about.about-none {
@@ -244,6 +244,7 @@ svg.none-svg {
 }
 .categories > span {
   padding: 0.25rem 0.9rem;
+  cursor: pointer;
 }
 #projects {
   background: rgb(34,34,33);
@@ -320,8 +321,10 @@ svg.none-svg {
   display: block;
 }
 .gallery-title-paragraph {
-  margin: 1.75rem 0;
+  margin: 0.875rem 0 2rem;
   display: none;
+  overflow-y: scroll;
+  font-family: 'Geogrotesque-Medium', sans-serif;
 }
 .paragraph {
   display: none;
@@ -476,9 +479,15 @@ header {
   margin-left: 0;
 }
 .about {
-  height: 100%;
-  padding: 1.5rem;
+  left: 0;
+  width: 30%;
+  padding: 0 1.5rem;
+  font-size: 1rem;
+  top: 1rem;
 }
+.about > h1 {
+  font-size: 1rem;  
+	}
 /* Container two columns*/
 .container {
   grid-template-columns: 30% 70%;
@@ -487,7 +496,9 @@ header {
 }
 /* svg */
 svg {
- 
+ right: calc(70% + 1.525rem);
+ bottom: 1.525rem;
+ width: 2.5rem;
 }
 
 /* Gallery preview */
@@ -535,15 +546,15 @@ svg {
   position: absolute;
   bottom: 0;
   height: 100%;
-  padding-left: 0.5rem;
+  padding-left: 0.5rem;	  
+  padding-bottom: 1.5rem;
 }
 .gallery-title-main {
   margin-bottom: 0.1rem;
 }
 .gallery-title-paragraph {
   display: block;
-  overflow-y: scroll;
-  height: 180px;
+  height: 13rem;
 }
 .gallery-title.mod {
 
@@ -570,4 +581,8 @@ svg {
   font-size: 1rem;
   margin: 1rem 0.3rem 0;
 }
+.arrow-down-close {
+  cursor: pointer;
+  top: 0.325rem;
+  right: 1.225rem;
 }
