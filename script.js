@@ -115,9 +115,6 @@ function activateIndicator(index) {
 	const slide = document.querySelectorAll('.slide');
 	slide.forEach((slide, i) => {
 		slide.classList.toggle('slide-view', i === index);
-		// Open project
-			const openProject = document.querySelector('.slide-view');
-				openProject.addEventListener('click', callback());
 	});
 	const divs = document.querySelectorAll('.slide-inside');
 	divs.forEach((div, i) => {
@@ -148,6 +145,9 @@ function activateIndicator(index) {
 	dots.forEach((dot, i) => {
 		dot.classList.toggle('selected', i === index);
 	});
+	const openProject = document.querySelector('.view');
+		openProject.addEventListener('click', callback);
+		openProject.addEventListener('click', openDropDown);
 }
 
 // Close button
