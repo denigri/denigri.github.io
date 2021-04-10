@@ -286,7 +286,7 @@ svg.none-svg {
 
 .description {
   position: relative;
-  padding: 0 1rem 0 0.5em;
+  padding: 0 0.5em;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -341,9 +341,6 @@ svg.none-svg {
 .arrow-down-close {
   width: 1.997rem;
   height: 1.997rem;
-  position: absolute;
-  right: 1.5rem;
-  top: 0;
 }
 .arrow-down-close:before {
   content: "";
@@ -398,7 +395,7 @@ svg.none-svg {
 }
 
 .gallery-title.mod {
-  margin-bottom: -66px;
+  margin-bottom: -71px;
   transition: 300ms ease-in-out margin-bottom, 400ms ease-in background-color;
   background: rgb(255,255,0);
 }
@@ -442,7 +439,7 @@ svg.none-svg {
 
  /*Gallery title transition*/
  .gallery-title.mod {
-    margin-bottom: -78px;
+    margin-bottom: -81px;
 }
 
 /* About, Projects click */
