@@ -514,14 +514,14 @@ svg {
 .slide-inside > img {
   height: 100%;
   width: auto;
-  padding-right: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem;
+  padding-left: 0;
 }
 .slide-inside > video {
   width: auto;
   height: 100%;
-  padding-right: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem;
+  padding-left: 0;
 }
 .slide-inside.none.block {
   display: flex;
@@ -563,6 +563,9 @@ svg {
 .tag {
   font-size: 1rem;
 }
+.description {
+  padding: 0 1.75em 0 0.5em;	
+}
 .dots {
   position: absolute;
   top: 0;
@@ -583,4 +586,7 @@ svg {
   cursor: pointer;
   top: 0.325rem;
   right: 1.225rem;
+  position: absolute;
+	
+}
 }
