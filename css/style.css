@@ -535,9 +535,6 @@ svg {
   overflow-y: hidden;
   overflow-x: auto;
 }
-.arrow-down-close {
-  transform: rotate(-90deg);
-}
 
 /* Gallery titles */
 .gallery-title {
@@ -584,10 +581,13 @@ svg {
   margin: 1rem 0.3rem 0;
 }
 .arrow-down-close {
+  top: 1.011rem;
+  right: 70%;
+  position: fixed;
+  margin-right: 0.688rem;
+  transform: rotate(-90deg) scale(1.2);
   cursor: pointer;
-  top: 0.325rem;
-  right: 1.225rem;
-  position: absolute;
-	
+
+
 }
 }
